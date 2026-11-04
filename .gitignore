@@ -9,6 +9,18 @@
 !/data/sample/
 !/data/README.md
 
+# The nine files of a Yandex Go data export, ignored ANYWHERE in the tree.
+# Only the synthetic copies under data/sample/ are re-included (rule below).
+ridehistory*.json
+cardstorage.json
+coupons.json
+routehistory.json
+shared-payments.json
+support_chats.json
+user_phones.json
+userplaces.json
+users.json
+
 # Common names for a downloaded export folder, wherever it lands.
 **/raw/
 **/private/
@@ -21,6 +33,9 @@
 **/*[Oo]rder*[Hh]istory*/
 *.private.json
 *.real.json
+
+# Re-include the synthetic sample (must come after the rules above).
+!/data/sample/**
 
 # Archives the export is usually delivered in.
 *.zip

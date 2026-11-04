@@ -10,7 +10,7 @@ def frame(records):
 
 
 def drv(name, plate):
-    return {"performer": {"name": name, "car": {"model": "Kia Rio", "number": plate}}}
+    return {"driver": name, "plate": plate}
 
 
 def test_month_breakdown_includes_empty_months():
@@ -29,7 +29,7 @@ def test_month_uses_local_time_not_utc():
 
 def test_tariff_stats_and_cancelled_excluded():
     df = frame([ride("a", tariff="econom", cost=1000), ride("b", tariff="econom", cost=2000),
-                ride("c", tariff="business", cost=5000), ride("d", tariff="business", cost=0, status="cancelled")])
+                ride("c", tariff="business", cost=5000), ride("d", tariff="business", cost=0.0, status="cancelled")])
     t = breakdown(df, "tariff")
     assert t.loc["Economy", "rides"] == 2 and t.loc["Economy", "cost_mean"] == 1500
     assert t.loc["Business", "rides"] == 1
@@ -38,8 +38,15 @@ def test_tariff_stats_and_cancelled_excluded():
     assert h["cost_mean"]["most"][0] == "Business"
 
 
+def test_missing_metric_is_reported_absent():
+    from taxistats.stats import has_data
+    df = frame([ride("a"), ride("b")])
+    assert has_data(df, "duration_min") and has_data(df, "surge")
+    assert not has_data(df, "wait_min")  # Yandex Go exports have no wait time
+
+
 def test_other_currency_excluded_from_money():
-    df = frame([ride("a", cost=1000), ride("b", cost=1000), ride("c", cost=50, currency="RUB")])
+    df = frame([ride("a", cost=1000), ride("b", cost=1000), ride("c", cost=50.0, currency="RUB")])
     t = breakdown(df, "tariff")
     assert t.loc["Economy", "rides"] == 3
     assert t.loc["Economy", "spend"] == 2000

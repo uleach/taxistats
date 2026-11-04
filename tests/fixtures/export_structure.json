@@ -1,0 +1,640 @@
+{
+ "cardstorage.json": {
+  "cards[].aliases[]": {
+   "types": "str",
+   "looks_like": "text",
+   "max_len": 30
+  },
+  "cards[].bound": {
+   "types": "bool",
+   "looks_like": "-",
+   "max_len": null
+  },
+  "cards[].busy": {
+   "types": "bool",
+   "looks_like": "-",
+   "max_len": null
+  },
+  "cards[].card_bank": {
+   "types": "str",
+   "looks_like": "text",
+   "max_len": 33
+  },
+  "cards[].card_country": {
+   "types": "str",
+   "looks_like": "text",
+   "max_len": 3
+  },
+  "cards[].card_id": {
+   "types": "str",
+   "looks_like": "text",
+   "max_len": 30
+  },
+  "cards[].currency": {
+   "types": "str",
+   "looks_like": "text",
+   "max_len": 3
+  },
+  "cards[].expiration_month": {
+   "types": "int",
+   "looks_like": "-",
+   "max_len": null
+  },
+  "cards[].expiration_year": {
+   "types": "int",
+   "looks_like": "-",
+   "max_len": null
+  },
+  "cards[].number": {
+   "types": "str",
+   "looks_like": "text",
+   "max_len": 14
+  },
+  "cards[].owner": {
+   "types": "str",
+   "looks_like": "number-as-text",
+   "max_len": 9
+  },
+  "cards[].system": {
+   "types": "str",
+   "looks_like": "text",
+   "max_len": 4
+  },
+  "cards[].unverified": {
+   "types": "bool",
+   "looks_like": "-",
+   "max_len": null
+  },
+  "cards[].valid": {
+   "types": "bool",
+   "looks_like": "-",
+   "max_len": null
+  }
+ },
+ "coupons.json": {
+  "[].code": {
+   "types": "str",
+   "looks_like": "text",
+   "max_len": 11
+  },
+  "[].cost_usage": {
+   "types": "float",
+   "looks_like": "-",
+   "max_len": null
+  },
+  "[].series_id": {
+   "types": "str",
+   "looks_like": "text",
+   "max_len": 3
+  },
+  "[].total_uses": {
+   "types": "int",
+   "looks_like": "-",
+   "max_len": null
+  },
+  "[].usages[].cost_usage": {
+   "types": "float",
+   "looks_like": "-",
+   "max_len": null
+  },
+  "[].usages[].reserve": {
+   "types": "str",
+   "looks_like": "uuid/hex id",
+   "max_len": 32
+  },
+  "[].usages[].was_used": {
+   "types": "bool",
+   "looks_like": "-",
+   "max_len": null
+  }
+ },
+ "ridehistory.json": {
+  "[].calculation.surge_coefficient": {
+   "types": "float",
+   "looks_like": "-",
+   "max_len": null
+  },
+  "[].country_id": {
+   "types": "str",
+   "looks_like": "text",
+   "max_len": 3
+  },
+  "[].created_at": {
+   "types": "str",
+   "looks_like": "datetime",
+   "max_len": 24
+  },
+  "[].driver.call_mode": {
+   "types": "str",
+   "looks_like": "text",
+   "max_len": 7
+  },
+  "[].driver.name": {
+   "types": "str",
+   "looks_like": "text",
+   "max_len": 41
+  },
+  "[].driver.photo_url": {
+   "types": "str",
+   "looks_like": "url",
+   "max_len": 95
+  },
+  "[].driver.rating": {
+   "types": "str",
+   "looks_like": "number-as-text",
+   "max_len": 4
+  },
+  "[].extra_enabled": {
+   "types": "bool",
+   "looks_like": "-",
+   "max_len": null
+  },
+  "[].formatted_duration": {
+   "types": "str",
+   "looks_like": "text",
+   "max_len": 10
+  },
+  "[].is_active": {
+   "types": "bool",
+   "looks_like": "-",
+   "max_len": null
+  },
+  "[].item_id.created_at": {
+   "types": "int",
+   "looks_like": "-",
+   "max_len": null
+  },
+  "[].item_id.order_id": {
+   "types": "str",
+   "looks_like": "uuid/hex id",
+   "max_len": 32
+  },
+  "[].legal_entities[].additional_properties[].type": {
+   "types": "str",
+   "looks_like": "text",
+   "max_len": 10
+  },
+  "[].legal_entities[].additional_properties[].value": {
+   "types": "str",
+   "looks_like": "text, number-as-text",
+   "max_len": 86
+  },
+  "[].legal_entities[].title": {
+   "types": "str",
+   "looks_like": "text",
+   "max_len": 10
+  },
+  "[].legal_entities[].type": {
+   "types": "str",
+   "looks_like": "text",
+   "max_len": 7
+  },
+  "[].order_id": {
+   "types": "str",
+   "looks_like": "uuid/hex id",
+   "max_len": 32
+  },
+  "[].park.long_name": {
+   "types": "str",
+   "looks_like": "text",
+   "max_len": 65
+  },
+  "[].payment.cashback": {
+   "types": "str",
+   "looks_like": "number-as-text",
+   "max_len": 4
+  },
+  "[].payment.cost": {
+   "types": "float",
+   "looks_like": "-",
+   "max_len": null
+  },
+  "[].payment.currency_code": {
+   "types": "str",
+   "looks_like": "text",
+   "max_len": 3
+  },
+  "[].payment.final_cost": {
+   "types": "str",
+   "looks_like": "text",
+   "max_len": 22
+  },
+  "[].payment.is_agent_cashback": {
+   "types": "bool",
+   "looks_like": "-",
+   "max_len": null
+  },
+  "[].payment.payment_method.system": {
+   "types": "str",
+   "looks_like": "text",
+   "max_len": 4
+  },
+  "[].payment.payment_method.title": {
+   "types": "str",
+   "looks_like": "text",
+   "max_len": 19
+  },
+  "[].payment.payment_method.type": {
+   "types": "str",
+   "looks_like": "text",
+   "max_len": 4
+  },
+  "[].payment.ride_cost": {
+   "types": "str",
+   "looks_like": "text",
+   "max_len": 22
+  },
+  "[].phone_id": {
+   "types": "str",
+   "looks_like": "uuid/hex id",
+   "max_len": 24
+  },
+  "[].receipt.url_with_embedded_pdf": {
+   "types": "str",
+   "looks_like": "url",
+   "max_len": 88
+  },
+  "[].route.destinations[].point[]": {
+   "types": "float",
+   "looks_like": "-",
+   "max_len": null
+  },
+  "[].route.destinations[].short_text": {
+   "types": "str",
+   "looks_like": "text",
+   "max_len": 91
+  },
+  "[].route.map_image": {
+   "types": "str",
+   "looks_like": "url",
+   "max_len": 1258
+  },
+  "[].route.source.point[]": {
+   "types": "float",
+   "looks_like": "-",
+   "max_len": null
+  },
+  "[].route.source.short_text": {
+   "types": "str",
+   "looks_like": "text",
+   "max_len": 56
+  },
+  "[].route.track[][]": {
+   "types": "float",
+   "looks_like": "-",
+   "max_len": null
+  },
+  "[].status": {
+   "types": "str",
+   "looks_like": "text",
+   "max_len": 9
+  },
+  "[].tariff_class": {
+   "types": "str",
+   "looks_like": "text",
+   "max_len": 8
+  },
+  "[].tariff_internal_name": {
+   "types": "str",
+   "looks_like": "text",
+   "max_len": 11
+  },
+  "[].taxi_status": {
+   "types": "str",
+   "looks_like": "text",
+   "max_len": 9
+  },
+  "[].vehicle.car_number": {
+   "types": "str",
+   "looks_like": "text",
+   "max_len": 10
+  },
+  "[].vehicle.color": {
+   "types": "str",
+   "looks_like": "text",
+   "max_len": 10
+  },
+  "[].vehicle.color_code": {
+   "types": "str",
+   "looks_like": "text, number-as-text",
+   "max_len": 6
+  },
+  "[].vehicle.layers.details": {
+   "types": "str",
+   "looks_like": "text",
+   "max_len": 25
+  },
+  "[].vehicle.layers.glossy": {
+   "types": "str",
+   "looks_like": "text",
+   "max_len": 24
+  },
+  "[].vehicle.layers.hard_light": {
+   "types": "str",
+   "looks_like": "text",
+   "max_len": 28
+  },
+  "[].vehicle.layers.mask": {
+   "types": "str",
+   "looks_like": "text",
+   "max_len": 22
+  },
+  "[].vehicle.layers.shadow": {
+   "types": "str",
+   "looks_like": "text",
+   "max_len": 24
+  },
+  "[].vehicle.layers.soft_light": {
+   "types": "str",
+   "looks_like": "text",
+   "max_len": 28
+  },
+  "[].vehicle.layers.warm_light": {
+   "types": "str",
+   "looks_like": "text",
+   "max_len": null
+  },
+  "[].vehicle.model": {
+   "types": "str",
+   "looks_like": "text",
+   "max_len": 22
+  }
+ },
+ "routehistory.json": {
+  "history[].brand": {
+   "types": "str",
+   "looks_like": "text",
+   "max_len": 6
+  },
+  "history[].created": {
+   "types": "str",
+   "looks_like": "datetime",
+   "max_len": 28
+  },
+  "history[].route[].full_text": {
+   "types": "str",
+   "looks_like": "text",
+   "max_len": 124
+  },
+  "history[].route[].metrica_action": {
+   "types": "str",
+   "looks_like": "text",
+   "max_len": 25
+  },
+  "history[].route[].metrica_method": {
+   "types": "str",
+   "looks_like": "text",
+   "max_len": 12
+  },
+  "history[].route[].point[]": {
+   "types": "float",
+   "looks_like": "-",
+   "max_len": null
+  }
+ },
+ "shared-payments.json": {
+  "owned_accounts[].created": {
+   "types": "str",
+   "looks_like": "datetime",
+   "max_len": 26
+  },
+  "owned_accounts[].deleted": {
+   "types": "str",
+   "looks_like": "datetime",
+   "max_len": 26
+  },
+  "owned_accounts[].error_description": {
+   "types": "str",
+   "looks_like": "text",
+   "max_len": 17
+  },
+  "owned_accounts[].id": {
+   "types": "str",
+   "looks_like": "text",
+   "max_len": 39
+  },
+  "owned_accounts[].is_active": {
+   "types": "bool",
+   "looks_like": "-",
+   "max_len": null
+  },
+  "owned_accounts[].members[].created": {
+   "types": "str",
+   "looks_like": "datetime",
+   "max_len": 26
+  },
+  "owned_accounts[].members[].nickname": {
+   "types": "str",
+   "looks_like": "text",
+   "max_len": 17
+  },
+  "owned_accounts[].members[].phone": {
+   "types": "str",
+   "looks_like": "phone-like",
+   "max_len": 13
+  },
+  "owned_accounts[].members[].role": {
+   "types": "str",
+   "looks_like": "text",
+   "max_len": 5
+  },
+  "owned_accounts[].type": {
+   "types": "str",
+   "looks_like": "text",
+   "max_len": 6
+  },
+  "used_accounts[].account_id": {
+   "types": "str",
+   "looks_like": "text",
+   "max_len": 39
+  },
+  "used_accounts[].account_is_active": {
+   "types": "bool",
+   "looks_like": "-",
+   "max_len": null
+  },
+  "used_accounts[].account_type": {
+   "types": "str",
+   "looks_like": "text",
+   "max_len": 6
+  },
+  "used_accounts[].member_created": {
+   "types": "str",
+   "looks_like": "datetime",
+   "max_len": 26
+  }
+ },
+ "support_chats.json": {
+  "[].chat_id": {
+   "types": "str",
+   "looks_like": "text",
+   "max_len": 29
+  },
+  "[].data[].created": {
+   "types": "str",
+   "looks_like": "datetime",
+   "max_len": 25
+  },
+  "[].data[].text": {
+   "types": "str",
+   "looks_like": "text, number-as-text",
+   "max_len": 502
+  }
+ },
+ "user_phones.json": {
+  "[].created.$date": {
+   "types": "str",
+   "looks_like": "datetime",
+   "max_len": 24
+  },
+  "[].phone": {
+   "types": "str",
+   "looks_like": "phone-like",
+   "max_len": 13
+  },
+  "[].stat_complete": {
+   "types": "int",
+   "looks_like": "-",
+   "max_len": null
+  },
+  "[].stat_complete_card": {
+   "types": "int",
+   "looks_like": "-",
+   "max_len": null
+  },
+  "[].stat_total": {
+   "types": "int",
+   "looks_like": "-",
+   "max_len": null
+  },
+  "[].type": {
+   "types": "str",
+   "looks_like": "text",
+   "max_len": 6
+  },
+  "[].updated.$date": {
+   "types": "str",
+   "looks_like": "datetime",
+   "max_len": 24
+  }
+ },
+ "userplaces.json": {
+  "places[].created": {
+   "types": "str",
+   "looks_like": "datetime",
+   "max_len": 28
+  },
+  "places[].description": {
+   "types": "str",
+   "looks_like": "text",
+   "max_len": 24
+  },
+  "places[].full_text": {
+   "types": "str",
+   "looks_like": "text",
+   "max_len": 58
+  },
+  "places[].house": {
+   "types": "str",
+   "looks_like": "number-as-text",
+   "max_len": 3
+  },
+  "places[].id": {
+   "types": "str",
+   "looks_like": "text",
+   "max_len": 4
+  },
+  "places[].name": {
+   "types": "str",
+   "looks_like": "text",
+   "max_len": 6
+  },
+  "places[].place_type": {
+   "types": "str",
+   "looks_like": "text",
+   "max_len": 4
+  },
+  "places[].point[]": {
+   "types": "float",
+   "looks_like": "-",
+   "max_len": null
+  },
+  "places[].short_text": {
+   "types": "str",
+   "looks_like": "text",
+   "max_len": 22
+  },
+  "places[].source": {
+   "types": "str",
+   "looks_like": "text",
+   "max_len": 5
+  },
+  "places[].street": {
+   "types": "str",
+   "looks_like": "text",
+   "max_len": 17
+  },
+  "places[].type": {
+   "types": "str",
+   "looks_like": "text",
+   "max_len": 12
+  },
+  "places[].updated": {
+   "types": "str",
+   "looks_like": "datetime",
+   "max_len": 28
+  },
+  "places[].uri": {
+   "types": "str",
+   "looks_like": "text",
+   "max_len": 273
+  },
+  "places[].version": {
+   "types": "int",
+   "looks_like": "-",
+   "max_len": null
+  }
+ },
+ "users.json": {
+  "[].application": {
+   "types": "str",
+   "looks_like": "text",
+   "max_len": 16
+  },
+  "[].application_version": {
+   "types": "str",
+   "looks_like": "text",
+   "max_len": 7
+  },
+  "[].authorized": {
+   "types": "bool",
+   "looks_like": "-",
+   "max_len": null
+  },
+  "[].created.$date": {
+   "types": "str",
+   "looks_like": "datetime",
+   "max_len": 24
+  },
+  "[].id": {
+   "types": "str",
+   "looks_like": "uuid/hex id",
+   "max_len": 32
+  },
+  "[].phone_id": {
+   "types": "str",
+   "looks_like": "uuid/hex id",
+   "max_len": 24
+  },
+  "[].updated.$date": {
+   "types": "str",
+   "looks_like": "datetime",
+   "max_len": 24
+  },
+  "[].yandex_uid": {
+   "types": "str",
+   "looks_like": "number-as-text",
+   "max_len": 10
+  }
+ }
+}

@@ -180,6 +180,7 @@ def highlight_block(title: str, hl: dict[str, Any], currency: str | None, unit: 
         ("cost_mean", "Avg fare", lambda v: fmt_money(v, currency)),
         ("wait_min_mean", "Avg wait (min)", lambda v: fmt_num(v, 1)),
         ("duration_min_mean", "Avg trip (min)", lambda v: fmt_num(v, 1)),
+        ("surge_mean", "Avg surge", lambda v: f"×{v:.2f}"),
     ]
     for key, label, f in spec:
         if key not in hl:
@@ -194,6 +195,8 @@ def highlight_block(title: str, hl: dict[str, Any], currency: str | None, unit: 
             f"<thead><tr><th></th><th>Most</th><th class='num'>Average / {escape(unit)}</th><th>Least</th></tr></thead>"
             f"<tbody>{''.join(rows)}</tbody></table></div></div>")
 
+
+METRIC_NAMES = {"wait_min": "wait time", "duration_min": "trip duration", "surge": "surge", "cost": "fare"}
 
 # --------------------------------------------------------------------------
 # Page
@@ -258,6 +261,9 @@ def render(results: dict[str, Any], report: dict[str, Any], *, title: str = "Rid
     money = lambda v: fmt_money(v, cur)  # noqa: E731
     dur = lambda v: fmt_num(v, 1)  # noqa: E731
     drv = results["drivers"]
+    avail = results.get("available", {})
+    surge_fmt = lambda v: "—" if pd.isna(v) else f"×{v:.2f}"  # noqa: E731
+    pct = lambda v: "—" if pd.isna(v) else f"{v:.0%}"  # noqa: E731
 
     group_cols = {
         "rides": ("Rides", fmt_num),
@@ -270,7 +276,12 @@ def render(results: dict[str, Any], report: dict[str, Any], *, title: str = "Rid
         "wait_min_max": ("Max wait", dur),
         "duration_min_mean": ("Avg trip", dur),
         "duration_min_max": ("Max trip", dur),
+        "surged_share": ("Surged", pct),
+        "surge_mean": ("Avg surge", surge_fmt),
     }
+    hidden = {m for m, ok in avail.items() if not ok}
+    group_cols = {k: v for k, v in group_cols.items()
+                  if not any(k.startswith(m + "_") for m in hidden) and not (k == "surged_share" and "surge" in hidden)}
 
     # ---- monthly charts
     m = tables["month"]
@@ -299,16 +310,16 @@ def render(results: dict[str, Any], report: dict[str, Any], *, title: str = "Rid
 
     # ---- weekday / hour
     w = tables["weekday"]
-    wd_chart = bar_chart([d[:3] for d in w.index], w["rides"].tolist(), height=200, title="Rides by weekday",
-                         tip=lambda i: f"{w.index[i]}\n{fmt_num(w['rides'].iat[i])} rides · avg wait {dur(w['wait_min_mean'].iat[i])} min")
+    wd_chart = bar_chart([d[:3] for d in w.index], w["rides"].tolist(), width=460, height=220, title="Rides by weekday",
+                         tip=lambda i: f"{w.index[i]}\n{fmt_num(w['rides'].iat[i])} rides · avg fare {money(w['cost_mean'].iat[i])}")
     h = tables["hour"].reindex(range(24)).fillna({"rides": 0})
-    hr_chart = bar_chart([f"{i:02d}" for i in h.index], h["rides"].tolist(), height=200, label_every=3, title="Rides by hour",
-                         tip=lambda i: f"{i:02d}:00–{i:02d}:59\n{fmt_num(h['rides'].iat[i])} rides · avg wait {dur(h['wait_min_mean'].iat[i])} min")
+    hr_chart = bar_chart([f"{i:02d}" for i in h.index], h["rides"].tolist(), width=460, height=220, label_every=3, title="Rides by hour",
+                         tip=lambda i: f"{i:02d}:00–{i:02d}:59\n{fmt_num(h['rides'].iat[i])} rides · avg fare {money(h['cost_mean'].iat[i])}\nsurged {pct(h['surged_share'].iat[i])}")
 
     # ---- extremes
     ex_rows = []
     for label, e in results["extremes"].items():
-        f = money if label == "cost" else (lambda v: f"{fmt_num(v, 1)} min")
+        f = money if label == "cost" else surge_fmt if label == "surge" else (lambda v: f"{fmt_num(v, 1)} min")
         ex_rows.append(
             f"<tr><th scope='row'>{escape(label.capitalize())}</th>"
             f"<td class='num'>{escape(f(e['max']['value']))}</td><td>{escape(fmt_date(e['max']['when'], True))} · {escape(e['max']['tariff'])}</td>"
@@ -336,6 +347,8 @@ def render(results: dict[str, Any], report: dict[str, Any], *, title: str = "Rid
         currency_note = (f'<div class="banner">Several currencies found ({", ".join(ov["currencies"])}). Money figures use '
                          f'{cur} only; {ov["excluded_other_currency"]} rides in other currencies are excluded from them.</div>')
     offsets = ", ".join(f"{k}: {v}" for k, v in ov["utc_offsets"].items())
+    missing = [METRIC_NAMES[m] for m in sorted(hidden) if m in METRIC_NAMES]
+    missing_note = (f'<p class="muted">Not in this export, so not shown: {escape(", ".join(missing))}.</p>' if missing else "")
 
     body = f"""
 <main>
@@ -347,11 +360,13 @@ def render(results: dict[str, Any], report: dict[str, Any], *, title: str = "Rid
 {tile("Completed rides", fmt_num(ov['completed']), f"{ov['cancelled_or_other']} cancelled/other")}
 {tile("Total spend", money(ov['total_spend']))}
 {tile("Average fare", money(ov['mean_cost']), f"median {money(ov['median_cost'])}")}
-{tile("Average wait", f"{fmt_num(ov['mean_wait_min'], 1)} min")}
+{tile("Average wait", f"{fmt_num(ov['mean_wait_min'], 1)} min") if avail.get("wait_min") else ""}
+{tile("Surge pricing", pct(ov['surged_share']) + " of rides", f"avg {surge_fmt(ov['mean_surge_when_surged'])} when surged") if avail.get("surge") else ""}
 {tile("Average trip", f"{fmt_num(ov['mean_duration_min'], 1)} min", f"{fmt_num(ov['total_ride_hours'])} h in total")}
 {tile("Repeat drivers", fmt_num(drv['repeat_drivers']), f"of {fmt_num(drv['distinct_drivers'])} identified")}
 </div>
 
+{missing_note}
 <h2>Over time</h2>
 <div class="card"><h3>Rides per month</h3>{rides_chart}</div>
 <div class="card"><h3>Spend per month ({escape(cur or '')})</h3>{spend_chart}
@@ -387,7 +402,7 @@ def render(results: dict[str, Any], report: dict[str, Any], *, title: str = "Rid
 <h2>Drivers and cars</h2>
 <p class="muted">Driver details are present on {fmt_num(drv['rides_with_driver'])} of {fmt_num(ov['completed'])} completed rides
 ({drv['share_with_driver']:.0%}). {fmt_num(drv['rides_with_repeat_driver'])} of those rides were with a driver who appears on more than one ride.
-A repeat driver is matched on name <em>and</em> plate; name-only matches are weaker because display names collide.</p>
+A repeat driver is matched on name <em>and</em> plate; name-only matches are weaker because names can repeat. The car is recorded on every ride, so repeat cars are the more complete signal.</p>
 <div class="tiles">
 {tile("Identified drivers", fmt_num(drv['distinct_drivers']))}
 {tile("Repeat drivers", fmt_num(drv['repeat_drivers']))}

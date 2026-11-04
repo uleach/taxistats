@@ -2,7 +2,10 @@ from datetime import datetime, timezone
 
 import pytest
 
-from taxistats.schema import RecordError, normalise_tariff, parse_money, parse_record, parse_timestamp
+from conftest import ride
+
+from taxistats.schema import (RecordError, normalise_tariff, parse_formatted_duration, parse_money, parse_record,
+                              parse_timestamp)
 
 
 @pytest.mark.parametrize("text", [
@@ -38,6 +41,22 @@ def test_tariff_names():
     assert normalise_tariff("Econom") == "Economy"
     assert normalise_tariff("cargo") == "Cargo"
     assert normalise_tariff(None) == "Unknown"
+
+
+def test_real_export_record():
+    r = parse_record(ride("abc", tariff="comfortplus", cost=2860.0, duration="1 ч 5 мин", driver="  Тестов  Арман ",
+                          plate="482 kta 02", surge=1.4))
+    assert (r.order_id, r.tariff, r.cost, r.currency) == ("abc", "Comfort+", 2860.0, "KZT")
+    assert r.duration_min == 65 and r.wait_min is None and r.surge == 1.4
+    assert r.driver_name == "Тестов Арман" and r.car_plate == "482KTA02" and r.car_model == "Kia Rio"
+
+
+@pytest.mark.parametrize("text,minutes", [
+    ("18 мин", 18), ("1 ч 5 мин", 65), ("2 ч", 120), ("1 h 05 min", 65), ("45 min", 45), ("1:05", 65),
+    ("0:18:30", 18.5), ("", None), ("скоро", None),
+])
+def test_formatted_duration(text, minutes):
+    assert parse_formatted_duration(text) == minutes
 
 
 def test_local_time_is_wall_clock():

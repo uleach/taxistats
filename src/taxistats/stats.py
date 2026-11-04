@@ -14,10 +14,14 @@ Methodological choices
 * **Cost aggregates use one currency.** Summing tenge and roubles is
   meaningless; if several currencies occur, money stats are restricted to the
   most common one and :func:`overview` says so.
-* **Identity of drivers is approximate.** Exports show a display name such as
-  "Arman K.", which many people share. A *repeat driver* is therefore keyed on
-  name **plus** plate when a plate is known; name-only matches are reported
-  separately as weaker evidence.
+* **Identity of drivers is approximate.** The export gives a driver's name
+  on only a minority of rides, and names can collide. A *repeat driver* is
+  therefore keyed on name **plus** plate; name-only matches are reported
+  separately as weaker evidence. The vehicle is present on every ride, so
+  repeat *cars* (by plate) are the more complete signal.
+* **Missing metrics are absent, not zero.** If a field never occurs in the
+  export (Yandex Go has no wait time), its columns are all-NaN and the
+  dashboard hides them.
 """
 
 from __future__ import annotations
@@ -28,14 +32,14 @@ import pandas as pd
 
 from .schema import Ride
 
-METRICS = {"cost": "cost", "wait_min": "wait (min)", "duration_min": "trip (min)"}
+METRICS = {"cost": "cost", "wait_min": "wait (min)", "duration_min": "trip (min)", "surge": "surge"}
 
 
 def to_frame(rides: Iterable[Ride]) -> pd.DataFrame:
     df = pd.DataFrame([r.to_dict() for r in rides], columns=Ride.columns())
     df["local_time"] = pd.to_datetime(df["local_time"])
     df["utc_time"] = pd.to_datetime(df["utc_time"], utc=True)
-    for col in ("cost", "wait_min", "duration_min"):
+    for col in ("cost", "wait_min", "duration_min", "surge"):
         df[col] = pd.to_numeric(df[col], errors="coerce")
     df["year"] = df["local_time"].dt.year
     df["month"] = df["local_time"].dt.to_period("M")
@@ -91,6 +95,9 @@ def overview(df: pd.DataFrame) -> dict[str, Any]:
         "mean_duration_min": float(done["duration_min"].mean()) if done["duration_min"].notna().any() else None,
         "total_ride_hours": float(done["duration_min"].sum() / 60),
         "with_driver_info": int(done["driver_name"].notna().sum()),
+        "surged_share": float((done["surge"] > 1).mean()) if done["surge"].notna().any() else None,
+        "mean_surge_when_surged": float(done.loc[done["surge"] > 1, "surge"].mean()) if (done["surge"] > 1).any() else None,
+        "countries": done["country"].value_counts().to_dict(),
         "utc_offsets": offsets.to_dict(),
     }
 
@@ -115,6 +122,7 @@ def breakdown(df: pd.DataFrame, by: str) -> pd.DataFrame:
         agg = src.groupby(by, observed=True)[col].agg(["min", "mean", "max"])
         for stat in ("min", "mean", "max"):
             out[f"{col}_{stat}"] = agg[stat]
+    out["surged_share"] = done.groupby(by, observed=True)["surge"].agg(lambda s: (s > 1).mean() if s.notna().any() else float("nan"))
     out["share"] = out["rides"] / out["rides"].sum()
 
     if by == "month" and len(out):
@@ -135,6 +143,11 @@ def breakdown(df: pd.DataFrame, by: str) -> pd.DataFrame:
     return out
 
 
+def has_data(df: pd.DataFrame, col: str) -> bool:
+    """False when a metric is absent from the export (e.g. wait time in Yandex Go)."""
+    return bool(completed(df)[col].notna().any())
+
+
 def highlights(table: pd.DataFrame) -> dict[str, Any]:
     """Most / average / least of rides and spend across the groups of a breakdown."""
     if table.empty:
@@ -147,7 +160,7 @@ def highlights(table: pd.DataFrame) -> dict[str, Any]:
             "least": (s.idxmin(), float(s.min())),
             "average": float(s.mean()),
         }
-    for col in ("cost_mean", "wait_min_mean", "duration_min_mean"):
+    for col in ("cost_mean", "wait_min_mean", "duration_min_mean", "surge_mean"):
         s = table[col].dropna()
         if not s.empty:
             res[col] = {
@@ -263,6 +276,7 @@ def compute_all(df: pd.DataFrame) -> dict[str, Any]:
     tables = {by: breakdown(df, by) for by in ("tariff", "year", "month", "weekday", "hour")}
     return {
         "overview": overview(df),
+        "available": {c: has_data(df, c) for c in METRICS},
         "tables": tables,
         "highlights": {by: highlights(tables[by]) for by in ("tariff", "year", "month")},
         "extremes": ride_extremes(df),

@@ -14,10 +14,19 @@ if [ -n "$bad" ]; then
   exit 1
 fi
 
-# Belt and braces: anything in data/sample must be generator output.
+# Belt and braces: data/sample/ may only hold generator output, i.e.
+# data/sample/<YYYY-MM-DD>/<one of the nine export file names>.
+known='ridehistory|cardstorage|coupons|routehistory|shared-payments|support_chats|user_phones|userplaces|users'
 for f in $(git diff --cached --name-only --diff-filter=ACMR -- data/sample/); do
-  case "$f" in
-    data/sample/rides_export_*.json) ;;
-    *) echo "pre-commit: unexpected file in data/sample/: $f" >&2; exit 1 ;;
-  esac
+  if ! echo "$f" | grep -Eq "^data/sample/[0-9]{4}-[0-9]{2}-[0-9]{2}/($known)\.json\$"; then
+    echo "pre-commit: unexpected file in data/sample/: $f" >&2; exit 1
+  fi
+done
+
+# The synthetic sample uses only reserved .invalid URLs and +7700000000x phones;
+# anything else in a staged sample file suggests real data was copied in.
+for f in $(git diff --cached --name-only --diff-filter=ACMR -- data/sample/); do
+  if git show ":$f" | grep -Eo 'https?://[^"/]+' | grep -Ev '\.example\.invalid$' | grep -q .; then
+    echo "pre-commit: $f contains a URL outside .example.invalid — is this real data?" >&2; exit 1
+  fi
 done

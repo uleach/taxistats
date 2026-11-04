@@ -2,10 +2,12 @@
 
 Why de-duplication is needed
 ----------------------------
-Ride-history exports are typically requested more than once (say, every few
-months), and each export covers an overlapping window. The same order
-therefore appears in several files — sometimes with *more* detail in a later
-export (driver details filled in, a final cost instead of an estimate).
+A Yandex Go data export holds the full ride history up to the day it was
+requested. Requesting it again later gives a second ``ridehistory.json``
+that repeats every earlier ride, and a copy can differ from the earlier one
+(a price adjusted after the fact, a field added in a newer export format).
+Merging several exports therefore needs de-duplication, and when copies
+disagree the merge must decide which value to keep.
 
 Strategy
 --------
@@ -32,6 +34,12 @@ from typing import Any, Iterable, Iterator
 from .schema import RecordError, Ride, parse_record
 
 log = logging.getLogger(__name__)
+
+# Inside an export folder only these files hold rides. The other files in a
+# Yandex Go export (cardstorage, coupons, routehistory, shared-payments,
+# support_chats, user_phones, userplaces, users) are deliberately never read:
+# they are not rides, and they are the most sensitive part of the export.
+RIDE_FILE_GLOB = "ridehistory*.json"
 
 # Keys under which a list of orders may be nested in an export file.
 CONTAINER_KEYS = ("orders", "rides", "trips", "items", "data", "history", "results")
@@ -64,12 +72,19 @@ class LoadReport:
 # Discovery & extraction
 # --------------------------------------------------------------------------
 
-def discover_files(paths: Iterable[str | Path]) -> list[Path]:
-    """Expand files and directories (recursively) into a sorted list of ``*.json`` files."""
+def discover_files(paths: Iterable[str | Path], pattern: str = RIDE_FILE_GLOB) -> list[Path]:
+    """Expand inputs into a sorted list of ride files.
+
+    Folders are searched recursively for ``pattern`` (``ridehistory*.json``),
+    so you can point the tool at one export folder or a folder of several
+    exports. A file named explicitly is always used, whatever its name.
+    Sorting by full path means exports in date-named folders are processed
+    oldest first, which makes later exports win ties during merging.
+    """
     found: set[Path] = set()
     for p in map(Path, paths):
         if p.is_dir():
-            found.update(x for x in p.rglob("*.json") if x.is_file())
+            found.update(x for x in p.rglob(pattern) if x.is_file())
         elif p.is_file():
             found.add(p)
         else:
@@ -96,17 +111,23 @@ def extract_records(payload: Any) -> Iterator[dict[str, Any]]:
         yield payload
 
 
+def source_label(path: Path) -> str:
+    """``2025-10-31/ridehistory.json`` — the export folder disambiguates identical file names."""
+    return f"{path.parent.name}/{path.name}" if path.parent.name else path.name
+
+
 def read_file(path: Path, report: LoadReport) -> list[Ride]:
     with path.open(encoding="utf-8-sig") as fh:  # -sig tolerates a BOM
         payload = json.load(fh)
+    label = source_label(path)
     rides: list[Ride] = []
     for rec in extract_records(payload):
         report.raw_records += 1
         try:
-            rides.append(parse_record(rec, source_file=path.name))
+            rides.append(parse_record(rec, source_file=label))
         except RecordError as exc:
-            report.rejected.append((path.name, str(exc)))
-            log.warning("%s: skipped record: %s", path.name, exc)
+            report.rejected.append((label, str(exc)))
+            log.warning("%s: skipped record: %s", label, exc)
     return rides
 
 
@@ -186,10 +207,10 @@ def load_exports(paths: Iterable[str | Path]) -> tuple[list[Ride], LoadReport]:
     report = LoadReport()
     files = discover_files(paths)
     if not files:
-        raise FileNotFoundError("no .json export files found")
+        raise FileNotFoundError(f"no ride files ({RIDE_FILE_GLOB}) found")
     per_file = []
     for path in files:
-        report.files.append(path.name)
+        report.files.append(source_label(path))
         per_file.append(read_file(path, report))
     rides = merge_rides(per_file, report)
     log.info(

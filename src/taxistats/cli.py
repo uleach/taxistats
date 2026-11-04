@@ -2,6 +2,7 @@
 
     taxistats sample  [--out data/sample] [--seed 42]
     taxistats run     INPUT [INPUT ...] [--out output] [--anonymise]
+    taxistats profile EXPORT_FOLDER [--out report.md]
 """
 
 from __future__ import annotations
@@ -10,7 +11,10 @@ import argparse
 import logging
 import sys
 
+from pathlib import Path
+
 from .pipeline import run
+from .profile import render_markdown
 from .synthetic import write_sample
 
 
@@ -33,12 +37,25 @@ def main(argv: list[str] | None = None) -> int:
     r.add_argument("--anonymise", action="store_true", help="replace driver names and plates with pseudonyms")
     r.add_argument("--title", default="Ride history")
 
+    pr = sub.add_parser("profile", help="print the structure of an export folder (field paths, types; no values)")
+    pr.add_argument("folder")
+    pr.add_argument("--out", help="write the report to this file instead of stdout")
+
     a = p.parse_args(argv)
     logging.basicConfig(level=logging.INFO if a.verbose else logging.ERROR, format="%(levelname)s %(message)s")
 
     if a.cmd == "sample":
         for path in write_sample(a.out, a.seed):
             print(f"wrote {path}")
+        return 0
+
+    if a.cmd == "profile":
+        report = render_markdown(Path(a.folder))
+        if a.out:
+            Path(a.out).write_text(report + "\n", encoding="utf-8")
+            print(f"wrote {a.out}")
+        else:
+            print(report)
         return 0
 
     try:

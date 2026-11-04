@@ -27,23 +27,30 @@ from typing import Any, Mapping
 # Candidate key names for each logical field, tried in order. Dotted paths
 # walk into nested objects ("performer.car.model").
 FIELD_ALIASES: dict[str, tuple[str, ...]] = {
-    "order_id": ("id", "order_id", "orderid"),
-    "created": ("created", "created_at", "datetime", "date"),
-    "status": ("status", "state"),
-    "tariff": ("tariff", "tariff_class", "class", "model"),
-    "cost": ("cost", "price", "final_cost"),
-    "currency": ("currency", "cost.currency", "price.currency"),
-    "wait": ("waiting_time", "wait_time", "wait"),
-    "duration": ("duration", "trip_duration", "ride_duration"),
-    "driver_name": ("performer.name", "driver.name", "driver_name"),
-    "car_model": ("performer.car.model", "car.model", "car_model"),
-    "car_color": ("performer.car.color", "car.color", "car_color"),
-    "car_plate": ("performer.car.number", "performer.car.plate", "car.plate", "car_number"),
+    "order_id": ("order_id", "item_id.order_id", "id"),
+    "created": ("created_at", "created", "datetime"),
+    "status": ("status", "taxi_status", "state"),
+    "tariff": ("tariff_internal_name", "tariff_class", "tariff"),
+    "cost": ("payment.cost", "payment.final_cost", "cost", "price"),
+    "currency": ("payment.currency_code", "currency", "cost.currency"),
+    "wait": ("waiting_time", "wait_time"),  # not present in Yandex Go exports
+    "duration": ("duration", "trip_duration"),  # numeric seconds, if a source has it
+    "formatted_duration": ("formatted_duration",),  # "18 мин", "1 ч 5 мин"
+    "surge": ("calculation.surge_coefficient",),
+    "country": ("country_id",),
+    "driver_name": ("driver.name", "performer.name", "driver_name"),
+    "car_model": ("vehicle.model", "performer.car.model", "car.model"),
+    "car_color": ("vehicle.color", "performer.car.color", "car.color"),
+    "car_plate": ("vehicle.car_number", "performer.car.number", "car.plate", "car_number"),
 }
 
 # Raw tariff codes -> display names. Unknown codes are title-cased.
 TARIFF_NAMES: dict[str, str] = {
+    # Keys are tariff_internal_name values; extend from your own export.
     "econom": "Economy",
+    "start": "Start",
+    "ultimate": "Ultima",
+    "express": "Delivery",
     "economy": "Economy",
     "comfort": "Comfort",
     "comfortplus": "Comfort+",
@@ -75,6 +82,8 @@ class Ride:
     currency: str | None
     wait_min: float | None
     duration_min: float | None
+    surge: float | None
+    country: str | None
     driver_name: str | None
     car_model: str | None
     car_color: str | None
@@ -192,11 +201,43 @@ def parse_seconds_as_minutes(value: Any) -> float | None:
     return round(seconds / 60.0, 2)
 
 
+_DURATION_RE = re.compile(
+    r"^\s*(?:(?P<h>\d+)\s*(?:ч|час\w*|h|hr|hours?)\.?)?\s*(?:(?P<m>\d+)\s*(?:мин\w*|min\w*|m)\.?)?\s*$",
+    re.IGNORECASE,
+)
+
+
+def parse_formatted_duration(value: Any) -> float | None:
+    """Minutes from a display string: ``"18 мин"``, ``"1 ч 5 мин"``, ``"1 h 5 min"``, ``"1:05"``.
+
+    Returns ``None`` (not an error) for an unrecognised string, so one odd
+    value never costs the whole ride.
+    """
+    if value in (None, ""):
+        return None
+    text = str(value).replace("\u00a0", " ").strip()
+    clock = re.fullmatch(r"(\d+):(\d{2})(?::(\d{2}))?", text)
+    if clock:
+        h, m, sec = int(clock[1]), int(clock[2]), int(clock[3] or 0)
+        return float(h * 60 + m + sec / 60)
+    match = _DURATION_RE.match(text)
+    if not match or not (match["h"] or match["m"]):
+        return None
+    return float(int(match["h"] or 0) * 60 + int(match["m"] or 0))
+
+
 def normalise_tariff(raw: Any) -> str:
     if raw in (None, ""):
         return "Unknown"
     key = str(raw).strip().lower().replace(" ", "").replace("-", "")
     return TARIFF_NAMES.get(key, str(raw).strip().title())
+
+
+def _float_or_none(value: Any) -> float | None:
+    try:
+        return float(value) if value not in (None, "") else None
+    except (TypeError, ValueError):
+        return None
 
 
 def _clean_str(value: Any) -> str | None:
@@ -245,7 +286,11 @@ def parse_record(record: Mapping[str, Any], source_file: str = "") -> Ride:
         cost=cost,
         currency=currency,
         wait_min=parse_seconds_as_minutes(_first(record, "wait")),
-        duration_min=parse_seconds_as_minutes(_first(record, "duration")),
+        duration_min=(parse_seconds_as_minutes(_first(record, "duration"))
+                      if _first(record, "duration") is not None
+                      else parse_formatted_duration(_first(record, "formatted_duration"))),
+        surge=_float_or_none(_first(record, "surge")),
+        country=_clean_str(_first(record, "country")),
         driver_name=_clean_str(_first(record, "driver_name")),
         car_model=_clean_str(_first(record, "car_model")),
         car_color=_clean_str(_first(record, "car_color")),
