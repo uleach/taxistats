@@ -1,0 +1,2821 @@
+{
+ "export_created": "2025-10-31T23:59:00+0600",
+ "orders": [
+  {
+   "id": "52bcb64dc59498c58ff018450f90cd63",
+   "created": "2025-10-29T13:51:55+0600",
+   "status": "complete",
+   "tariff": "comfort",
+   "cost": 1920.0,
+   "currency": "KZT",
+   "waiting_time": 92,
+   "duration": 933,
+   "performer": {
+    "name": "Talgat O.",
+    "car": {
+     "model": "Hyundai Sonata",
+     "color": "white",
+     "number": "369YPP05"
+    }
+   }
+  },
+  {
+   "id": "a91decb251a3d21bf4d1183f76f8ef17",
+   "created": "2025-10-28T10:30:18+0600",
+   "status": "complete",
+   "tariff": "econom",
+   "cost": 1810.0,
+   "currency": "KZT",
+   "waiting_time": 836,
+   "duration": 1344,
+   "performer": {
+    "name": "Dmitry N.",
+    "car": {
+     "model": "Chery Tiggo 7 Pro",
+     "color": "white",
+     "number": "348TYX02"
+    }
+   }
+  },
+  {
+   "id": "e0028f9a3b5d5c9cd73794d54cd36406",
+   "created": "2025-10-27T08:26:44+0600",
+   "status": "complete",
+   "tariff": "econom",
+   "cost": 1340.0,
+   "currency": "KZT",
+   "waiting_time": 243,
+   "duration": 816,
+   "performer": {
+    "name": "Nurlan S.",
+    "car": {
+     "model": "Toyota Camry",
+     "color": "grey",
+     "number": "352MBT05"
+    }
+   }
+  },
+  {
+   "id": "6f2f841100d190bd36d5187bbfdbb10b",
+   "created": "2025-10-27T08:09:31+0600",
+   "status": "complete",
+   "tariff": "comfortplus",
+   "cost": 3120.0,
+   "currency": "KZT",
+   "waiting_time": 73,
+   "duration": 1311,
+   "performer": {
+    "name": "Sergey Y.",
+    "car": {
+     "model": "Chery Tiggo 7 Pro",
+     "color": "grey",
+     "number": "263YEH02"
+    }
+   }
+  },
+  {
+   "id": "f2fda085091f73f3a046d4d3e0a8a8af",
+   "created": "2025-10-24T18:20:57+0600",
+   "status": "complete",
+   "tariff": "business",
+   "cost": 3350.0,
+   "currency": "KZT",
+   "waiting_time": 758,
+   "duration": 476,
+   "performer": {
+    "name": "Talgat B.",
+    "car": {
+     "model": "Toyota Camry",
+     "color": "white",
+     "number": "204ECY05"
+    }
+   }
+  },
+  {
+   "id": "7416386b46af040d55d8a81a81ceb20e",
+   "created": "2025-10-24T07:08:17+0600",
+   "status": "complete",
+   "tariff": "comfort",
+   "cost": 1580.0,
+   "currency": "KZT",
+   "waiting_time": 22,
+   "duration": 645,
+   "performer": {
+    "name": "Oleg Z.",
+    "car": {
+     "model": "Kia Rio",
+     "color": "white",
+     "number": "783XPA05"
+    }
+   }
+  },
+  {
+   "id": "1c0fb87feb01bba74b814a84742f790e",
+   "created": "2025-10-22T08:31:53+0600",
+   "status": "complete",
+   "tariff": "comfortplus",
+   "cost": 2460.0,
+   "currency": "KZT",
+   "waiting_time": 974,
+   "duration": 886,
+   "performer": {
+    "name": "Sergey S.",
+    "car": {
+     "model": "Hyundai Sonata",
+     "color": "white",
+     "number": "661TXT02"
+    }
+   }
+  },
+  {
+   "id": "eaedeed7f06fbb0f49d9bf732b589b3f",
+   "created": "2025-10-12T15:17:36+0600",
+   "status": "complete",
+   "tariff": "comfortplus",
+   "cost": 2360.0,
+   "currency": "KZT",
+   "waiting_time": 59,
+   "duration": 818,
+   "performer": {
+    "name": "Olzhas T.",
+    "car": {
+     "model": "Hyundai Elantra",
+     "color": "black",
+     "number": "584XEP02"
+    }
+   }
+  },
+  {
+   "id": "d06176b30abc36fc24a887a1f41978cd",
+   "created": "2025-10-11T16:03:36+0600",
+   "status": "complete",
+   "tariff": "comfort",
+   "cost": 2060.0,
+   "currency": "KZT",
+   "waiting_time": 710,
+   "duration": 1061
+  },
+  {
+   "id": "70473d9d520826b8611eb15c741a5b09",
+   "created": "2025-10-09T18:46:49+0600",
+   "status": "complete",
+   "tariff": "comfort",
+   "cost": 4490.0,
+   "currency": "KZT",
+   "waiting_time": 44,
+   "duration": 1687,
+   "performer": {
+    "name": "Sergey A.",
+    "car": {
+     "model": "Chevrolet Cobalt",
+     "color": "white",
+     "number": "916OEK02"
+    }
+   }
+  },
+  {
+   "id": "68ac039ce921f23172eace11f32de530",
+   "created": "2025-10-07T08:21:57+0600",
+   "status": "complete",
+   "tariff": "comfortplus",
+   "cost": 2230.0,
+   "currency": "KZT",
+   "waiting_time": 37,
+   "duration": 738,
+   "performer": {
+    "name": "Rustam R.",
+    "car": {
+     "model": "Chery Tiggo 7 Pro",
+     "color": "silver",
+     "number": "595EEY02"
+    }
+   }
+  },
+  {
+   "id": "b0a6e45706205f4a6e718848d577c131",
+   "created": "2025-10-01T08:29:00+0600",
+   "status": "complete",
+   "tariff": "econom",
+   "cost": 1300.0,
+   "currency": "KZT",
+   "waiting_time": 298,
+   "duration": 780,
+   "performer": {
+    "name": "Ilya A.",
+    "car": {
+     "model": "Toyota Camry",
+     "color": "white",
+     "number": "674PTA02"
+    }
+   }
+  },
+  {
+   "id": "50581a4a57713fff49714ec3cbbd3732",
+   "created": "2025-09-27T12:52:52+0600",
+   "status": "complete",
+   "tariff": "kids",
+   "cost": 3210.0,
+   "currency": "KZT",
+   "waiting_time": 1007,
+   "duration": 1576,
+   "performer": {
+    "name": "Arman S.",
+    "car": {
+     "model": "Kia Rio",
+     "color": "silver",
+     "number": "746ABY02"
+    }
+   }
+  },
+  {
+   "id": "a740a1425cbf7ee6ea258d831391d18a",
+   "created": "2025-09-27T12:20:47+0300",
+   "status": "complete",
+   "tariff": "minivan",
+   "cost": 3970.0,
+   "currency": "KZT",
+   "waiting_time": 1500,
+   "duration": 1334,
+   "performer": {
+    "name": "Aleksandr S.",
+    "car": {
+     "model": "Hyundai Sonata",
+     "color": "white",
+     "number": "181XEH02"
+    }
+   }
+  },
+  {
+   "id": "3e3a0dfc5424aae43e78af27e93bda3b",
+   "created": "2025-09-27T20:34:46+0600",
+   "status": "complete",
+   "tariff": "econom",
+   "cost": 1760.0,
+   "currency": "KZT",
+   "waiting_time": 176,
+   "duration": 1300
+  },
+  {
+   "id": "ef7e1940f568757413caaeb6f486a251",
+   "created": "2025-09-25T19:45:22+0600",
+   "status": "complete",
+   "tariff": "business",
+   "cost": 4230.0,
+   "currency": "KZT",
+   "waiting_time": 513,
+   "duration": 815
+  },
+  {
+   "id": "290a42d207f9ee879f35e95d4b47b715",
+   "created": "2025-09-19T18:04:41+0600",
+   "status": "complete",
+   "tariff": "econom",
+   "cost": 1630.0,
+   "currency": "KZT",
+   "waiting_time": 886,
+   "duration": 1160,
+   "performer": {
+    "name": "Talgat V.",
+    "car": {
+     "model": "Kia Rio",
+     "color": "silver",
+     "number": "924AEA02"
+    }
+   }
+  },
+  {
+   "id": "3caaa31e13d3c72682d339481cf98855",
+   "created": "2025-09-19T22:01:43+0500",
+   "status": "complete",
+   "tariff": "comfortplus",
+   "cost": 3880.0,
+   "currency": "KZT",
+   "waiting_time": 15,
+   "duration": 1834,
+   "performer": {
+    "name": "Bauyrzhan Z.",
+    "car": {
+     "model": "Toyota Camry",
+     "color": "grey",
+     "number": "509KXP05"
+    }
+   }
+  },
+  {
+   "id": "0abd99fd513cd4649473b7cd70b81530",
+   "created": "2025-09-18T13:14:40+0600",
+   "status": "complete",
+   "tariff": "econom",
+   "cost": 2670.0,
+   "currency": "KZT",
+   "waiting_time": 63,
+   "duration": 2346,
+   "performer": {
+    "name": "Aleksandr S.",
+    "car": {
+     "model": "Hyundai Sonata",
+     "color": "white",
+     "number": "181XEH02"
+    }
+   }
+  },
+  {
+   "id": "9c3e7d79e5a4b1b446c524a5145d2f7e",
+   "created": "2025-09-15T12:01:28+0600",
+   "status": "complete",
+   "tariff": "econom",
+   "cost": 1130.0,
+   "currency": "KZT",
+   "waiting_time": 243,
+   "duration": 584,
+   "performer": {
+    "name": "Daulet N.",
+    "car": {
+     "model": "Toyota Camry",
+     "color": "blue",
+     "number": "687KTM01"
+    }
+   }
+  },
+  {
+   "id": "1fd28b9e0328a80d9ba5d58bc58536b7",
+   "created": "2025-09-14T23:49:34+0600",
+   "status": "complete",
+   "tariff": "econom",
+   "cost": 1560.0,
+   "currency": "KZT",
+   "waiting_time": 76,
+   "duration": 1079,
+   "performer": {
+    "name": "Dmitry Z.",
+    "car": {
+     "model": "Hyundai Staria",
+     "color": "grey",
+     "number": "659PYY05"
+    }
+   }
+  },
+  {
+   "id": "03e30f78e85fda5521c268f33cfc7050",
+   "created": "2025-09-14T13:34:29+0300",
+   "status": "complete",
+   "tariff": "econom",
+   "cost": 2470.0,
+   "currency": "KZT",
+   "waiting_time": 72,
+   "duration": 2122,
+   "performer": {
+    "name": "Daulet Y.",
+    "car": {
+     "model": "Toyota Camry",
+     "color": "white",
+     "number": "344ATC02"
+    }
+   }
+  },
+  {
+   "id": "bc441fbcedb68854baae905cc8594dfb",
+   "created": "2025-09-12T09:53:58+0600",
+   "status": "complete",
+   "tariff": "econom",
+   "cost": 1760.0,
+   "currency": "KZT",
+   "waiting_time": 6,
+   "duration": 1309,
+   "performer": {
+    "name": "Ruslan K.",
+    "car": {
+     "model": "Kia Rio",
+     "color": "blue",
+     "number": "224OYO02"
+    }
+   }
+  },
+  {
+   "id": "06a76b07efede7bb5909b7d6c353b9e4",
+   "created": "2025-09-11T03:24:24+0600",
+   "status": "cancelled",
+   "tariff": "comfort",
+   "cost": 0.0,
+   "currency": "KZT",
+   "waiting_time": 291,
+   "duration": 0
+  },
+  {
+   "id": "625966cc9696e8334728ddf64532499e",
+   "created": "2025-09-09T14:19:47+0600",
+   "status": "complete",
+   "tariff": "comfort",
+   "cost": 1640.0,
+   "currency": "KZT",
+   "waiting_time": 390,
+   "duration": 707,
+   "performer": {
+    "name": "Samat Y.",
+    "car": {
+     "model": "Kia Rio",
+     "color": "silver",
+     "number": "739TXX02"
+    }
+   }
+  },
+  {
+   "id": "b49bc1ef692c6843e682471058bd19da",
+   "created": "2025-09-06T19:23:49+0600",
+   "status": "complete",
+   "tariff": "comfort",
+   "cost": 2530.0,
+   "currency": "KZT",
+   "waiting_time": 603,
+   "duration": 1486
+  },
+  {
+   "id": "65d771639b2aeea6213515744adb8f79",
+   "created": "2025-08-30T23:00:55+0600",
+   "status": "complete",
+   "tariff": "comfort",
+   "cost": 1640.0,
+   "currency": "KZT",
+   "waiting_time": 12,
+   "duration": 717,
+   "performer": {
+    "name": "Andrey R.",
+    "car": {
+     "model": "Chevrolet Cobalt",
+     "color": "black",
+     "number": "814HAC01"
+    }
+   }
+  },
+  {
+   "id": "c0a85dbdbf5a910f69bea8c93a24ec19",
+   "created": "2025-08-29T12:57:39+0600",
+   "status": "complete",
+   "tariff": "kids",
+   "cost": 3080.0,
+   "currency": "KZT",
+   "waiting_time": 240,
+   "duration": 898
+  },
+  {
+   "id": "200f8ed9b208641860920068c403b430",
+   "created": "2025-08-29T07:49:50+0600",
+   "status": "complete",
+   "tariff": "comfortplus",
+   "cost": 2950.0,
+   "currency": "KZT",
+   "waiting_time": 378,
+   "duration": 1232,
+   "performer": {
+    "name": "Samat S.",
+    "car": {
+     "model": "Chevrolet Cobalt",
+     "color": "grey",
+     "number": "199MEB01"
+    }
+   }
+  },
+  {
+   "id": "c81320254dacd33c7a4382176e77cdd3",
+   "created": "2025-08-28T16:05:56+0600",
+   "status": "complete",
+   "tariff": "comfort",
+   "cost": 4190.0,
+   "currency": "KZT",
+   "waiting_time": 11,
+   "duration": 1636
+  },
+  {
+   "id": "ceb7803ec3fcac0ed5c2c94db3fdc2b8",
+   "created": "2025-08-27T15:46:21+0600",
+   "status": "complete",
+   "tariff": "business",
+   "cost": 17900.0,
+   "currency": "KZT",
+   "waiting_time": 128,
+   "duration": 2873,
+   "performer": {
+    "name": "Yerlan R.",
+    "car": {
+     "model": "Volkswagen Polo",
+     "color": "white",
+     "number": "994YXT02"
+    }
+   }
+  },
+  {
+   "id": "3354b4be42c91aaf6be13e78568a220d",
+   "created": "2025-08-25T14:25:39+0300",
+   "status": "cancelled",
+   "tariff": "econom",
+   "cost": 0.0,
+   "currency": "KZT",
+   "waiting_time": 152,
+   "duration": 0
+  },
+  {
+   "id": "2869b5eedf18e065df5864d511655b1e",
+   "created": "2025-08-22T07:14:03+0600",
+   "status": "complete",
+   "tariff": "comfort",
+   "cost": 1800.0,
+   "currency": "KZT",
+   "waiting_time": 762,
+   "duration": 862
+  },
+  {
+   "id": "87352231a4695757ba70c9f6e9368ad0",
+   "created": "2025-08-10T00:42:06+0600",
+   "status": "complete",
+   "tariff": "econom",
+   "cost": 1790.0,
+   "currency": "KZT",
+   "waiting_time": 189,
+   "duration": 849,
+   "performer": {
+    "name": "Samat M.",
+    "car": {
+     "model": "Lexus ES",
+     "color": "grey",
+     "number": "567OBP02"
+    }
+   }
+  },
+  {
+   "id": "60ac4a6473131038b2dfb0751b8fabe9",
+   "created": "2025-08-01T22:59:04+0600",
+   "status": "complete",
+   "tariff": "econom",
+   "cost": 1860.0,
+   "currency": "KZT",
+   "waiting_time": 112,
+   "duration": 1440,
+   "performer": {
+    "name": "Zhanibek O.",
+    "car": {
+     "model": "Hyundai Accent",
+     "color": "silver",
+     "number": "556PMP02"
+    }
+   }
+  },
+  {
+   "id": "3c92f1abcbacc3c6bb8ec1cbead217d1",
+   "created": "2025-07-31T05:46:10+0600",
+   "status": "complete",
+   "tariff": "econom",
+   "cost": 1750.0,
+   "currency": "KZT",
+   "waiting_time": 272,
+   "duration": 1316,
+   "performer": {
+    "name": "Bekzat T.",
+    "car": {
+     "model": "Chery Tiggo 7 Pro",
+     "color": "white",
+     "number": "734EOA05"
+    }
+   }
+  },
+  {
+   "id": "2121cc4f425ca2e38682d62fa8ae013a",
+   "created": "2025-07-28T19:42:19+0600",
+   "status": "complete",
+   "tariff": "business",
+   "cost": 3940.0,
+   "currency": "KZT",
+   "waiting_time": 446,
+   "duration": 729,
+   "performer": {
+    "name": "Andrey N.",
+    "car": {
+     "model": "Toyota Camry",
+     "color": "blue",
+     "number": "859PXY02"
+    }
+   }
+  },
+  {
+   "id": "b81e1682a7eb40085a13f4bb26c25405",
+   "created": "2025-07-27T00:10:22+0600",
+   "status": "complete",
+   "tariff": "comfort",
+   "cost": 2460.0,
+   "currency": "KZT",
+   "waiting_time": 628,
+   "duration": 1452,
+   "performer": {
+    "name": "Nurlan Y.",
+    "car": {
+     "model": "Toyota Corolla",
+     "color": "white",
+     "number": "985OOE01"
+    }
+   }
+  },
+  {
+   "id": "e834fb5be879c9a60ae9eacc71c966b3",
+   "created": "2025-07-26T21:09:01+0600",
+   "status": "complete",
+   "tariff": "econom",
+   "cost": 1910.0,
+   "currency": "KZT",
+   "waiting_time": 208,
+   "duration": 630,
+   "performer": {
+    "name": "Andrey R.",
+    "car": {
+     "model": "Chevrolet Cobalt",
+     "color": "black",
+     "number": "814HAC01"
+    }
+   }
+  },
+  {
+   "id": "2f4f914c058b5ee1a2ddd15a257066e8",
+   "created": "2025-07-14T13:11:52+0600",
+   "status": "complete",
+   "tariff": "econom",
+   "cost": 1870.0,
+   "currency": "KZT",
+   "waiting_time": 227,
+   "duration": 1466,
+   "performer": {
+    "name": "Zhanibek R.",
+    "car": {
+     "model": "Hyundai Accent",
+     "color": "red",
+     "number": "469EHE02"
+    }
+   }
+  },
+  {
+   "id": "9a920655272c74820002572a113038f5",
+   "created": "2025-07-07T20:40:54+0600",
+   "status": "complete",
+   "tariff": "econom",
+   "cost": 1850.0,
+   "currency": "KZT",
+   "waiting_time": 661,
+   "duration": 1451
+  },
+  {
+   "id": "bd46ebd582c52802aca6549295a97dd7",
+   "created": "2025-07-04T19:05:03+0600",
+   "status": "complete",
+   "tariff": "econom",
+   "cost": 1920.0,
+   "currency": "KZT",
+   "waiting_time": 200,
+   "duration": 1535,
+   "performer": {
+    "name": "Azamat Z.",
+    "car": {
+     "model": "Volkswagen Polo",
+     "color": "grey",
+     "number": "645TAK01"
+    }
+   }
+  },
+  {
+   "id": "67273710203d54c96485525ed858f464",
+   "created": "2025-07-03T19:05:48+0600",
+   "status": "complete",
+   "tariff": "econom",
+   "cost": 1570.0,
+   "currency": "KZT",
+   "waiting_time": 232,
+   "duration": 1126,
+   "performer": {
+    "name": "Marat N.",
+    "car": {
+     "model": "Toyota Camry",
+     "color": "black",
+     "number": "813OHM05"
+    }
+   }
+  },
+  {
+   "id": "6ba64252776ffd036d7bba175aac72b1",
+   "created": "2025-07-01T08:50:56+0600",
+   "status": "complete",
+   "tariff": "comfortplus",
+   "cost": 1870.0,
+   "currency": "KZT",
+   "waiting_time": 390,
+   "duration": 527
+  },
+  {
+   "id": "4d126ab13313f36c8de58a886a93716a",
+   "created": "2025-06-30T21:38:19+0600",
+   "status": "complete",
+   "tariff": "econom",
+   "cost": 2070.0,
+   "currency": "KZT",
+   "waiting_time": 391,
+   "duration": 684,
+   "performer": {
+    "name": "Nurlan G.",
+    "car": {
+     "model": "Kia Carnival",
+     "color": "silver",
+     "number": "771YKE01"
+    }
+   }
+  },
+  {
+   "id": "cfcc2abd3facabcc5ac92db2eed4d005",
+   "created": "2025-06-26T19:09:05+0600",
+   "status": "cancelled",
+   "tariff": "comfort",
+   "cost": 0.0,
+   "currency": "KZT",
+   "waiting_time": 152,
+   "duration": 0
+  },
+  {
+   "id": "7ca08cde4dbbb7cd29a099deaa10e595",
+   "created": "2025-06-13T19:36:50+0600",
+   "status": "complete",
+   "tariff": "comfortplus",
+   "cost": 2580.0,
+   "currency": "KZT",
+   "waiting_time": 207,
+   "duration": 1017,
+   "performer": {
+    "name": "Daulet O.",
+    "car": {
+     "model": "Toyota Camry",
+     "color": "white",
+     "number": "944BMP02"
+    }
+   }
+  },
+  {
+   "id": "641a4b7454c93d44e353a243594de8d7",
+   "created": "2025-06-08T03:17:56+0600",
+   "status": "complete",
+   "tariff": "comfort",
+   "cost": 2500.0,
+   "currency": "KZT",
+   "waiting_time": 1179,
+   "duration": 1515,
+   "performer": {
+    "name": "Bauyrzhan O.",
+    "car": {
+     "model": "Hyundai Accent",
+     "color": "black",
+     "number": "320OMH05"
+    }
+   }
+  },
+  {
+   "id": "bdb2fd9e93dc8eea3e8ee36a07e95e6d",
+   "created": "2025-06-05T13:17:43+0600",
+   "status": "complete",
+   "tariff": "comfort",
+   "cost": 2100.0,
+   "currency": "KZT",
+   "waiting_time": 142,
+   "duration": 1157,
+   "performer": {
+    "name": "Ilya O.",
+    "car": {
+     "model": "Lexus ES",
+     "color": "white",
+     "number": "162XXB01"
+    }
+   }
+  },
+  {
+   "id": "e430fb91556fe90eb5ccdbe64d171ebc",
+   "created": "2025-06-04T19:21:28+0600",
+   "status": "complete",
+   "tariff": "comfort",
+   "cost": 1690.0,
+   "currency": "KZT",
+   "waiting_time": 293,
+   "duration": 791,
+   "performer": {
+    "name": "Yerzhan G.",
+    "car": {
+     "model": "Kia K5",
+     "color": "black",
+     "number": "795MKX01"
+    }
+   }
+  },
+  {
+   "id": "d5da16fd4a68998ffd8bb697ae1782f6",
+   "created": "2025-05-31T20:00:38+0600",
+   "status": "cancelled",
+   "tariff": "econom",
+   "cost": 0.0,
+   "currency": "KZT",
+   "waiting_time": 495,
+   "duration": 0
+  },
+  {
+   "id": "558492ba6d8c5504797f6e4daa810850",
+   "created": "2025-05-30T18:54:58+0600",
+   "status": "complete",
+   "tariff": "comfort",
+   "cost": 1320.0,
+   "currency": "KZT",
+   "waiting_time": 49,
+   "duration": 458,
+   "performer": {
+    "name": "Dmitry O.",
+    "car": {
+     "model": "Kia Rio",
+     "color": "blue",
+     "number": "929YAO05"
+    }
+   }
+  },
+  {
+   "id": "bbdfb57449b8f7ba98a7fea2b4b2ce14",
+   "created": "2025-05-29T11:25:06+0600",
+   "status": "complete",
+   "tariff": "econom",
+   "cost": 2550.0,
+   "currency": "KZT",
+   "waiting_time": 164,
+   "duration": 2296,
+   "performer": {
+    "name": "Askar G.",
+    "car": {
+     "model": "Chery Tiggo 7 Pro",
+     "color": "white",
+     "number": "467BMB02"
+    }
+   }
+  },
+  {
+   "id": "0922d88de5228d310d9a6fce1d7cf46d",
+   "created": "2025-05-26T08:11:38+0600",
+   "status": "complete",
+   "tariff": "econom",
+   "cost": 2240.0,
+   "currency": "KZT",
+   "waiting_time": 27,
+   "duration": 1211,
+   "performer": {
+    "name": "Dmitry K.",
+    "car": {
+     "model": "Chevrolet Cobalt",
+     "color": "grey",
+     "number": "314CKK02"
+    }
+   }
+  },
+  {
+   "id": "1585665d8ce0bd8fed4b229f1e4aa016",
+   "created": "2025-05-18T17:06:09+0300",
+   "status": "complete",
+   "tariff": "comfort",
+   "cost": 1370.0,
+   "currency": "KZT",
+   "waiting_time": 83,
+   "duration": 510,
+   "performer": {
+    "name": "Aidos A.",
+    "car": {
+     "model": "Volkswagen Polo",
+     "color": "black",
+     "number": "400MBP05"
+    }
+   }
+  },
+  {
+   "id": "de2bfe5873d2939ef99dd6d562b51781",
+   "created": "2025-05-14T14:20:48+0600",
+   "status": "complete",
+   "tariff": "minivan",
+   "cost": 5640.0,
+   "currency": "KZT",
+   "waiting_time": 1016,
+   "duration": 1627,
+   "performer": {
+    "name": "Aidos A.",
+    "car": {
+     "model": "Volkswagen Polo",
+     "color": "black",
+     "number": "400MBP05"
+    }
+   }
+  },
+  {
+   "id": "0f6da7517e9e7b8af8c59ac6133ca9cf",
+   "created": "2025-05-09T07:49:18+0600",
+   "status": "complete",
+   "tariff": "comfort",
+   "cost": 1370.0,
+   "currency": "KZT",
+   "waiting_time": 74,
+   "duration": 511,
+   "performer": {
+    "name": "Bekzat O.",
+    "car": {
+     "model": "Kia Carnival",
+     "color": "red",
+     "number": "706PAM05"
+    }
+   }
+  },
+  {
+   "id": "1f53db6eab1177367260282fa30c1e0e",
+   "created": "2025-05-05T18:59:08+0600",
+   "status": "complete",
+   "tariff": "comfort",
+   "cost": 1540.0,
+   "currency": "KZT",
+   "waiting_time": 43,
+   "duration": 662,
+   "performer": {
+    "name": "Dmitry K.",
+    "car": {
+     "model": "Chevrolet Cobalt",
+     "color": "grey",
+     "number": "314CKK02"
+    }
+   }
+  },
+  {
+   "id": "1335f6c34de5f4aff27815f60c49f33a",
+   "created": "2025-05-04T12:05:12+0600",
+   "status": "complete",
+   "tariff": "comfort",
+   "cost": 3580.0,
+   "currency": "KZT",
+   "waiting_time": 314,
+   "duration": 1050,
+   "performer": {
+    "name": "Yerlan S.",
+    "car": {
+     "model": "Chery Tiggo 7 Pro",
+     "color": "black",
+     "number": "720HKC05"
+    }
+   }
+  },
+  {
+   "id": "02a95064d3511e950c3edd5c39590149",
+   "created": "2025-05-03T01:19:44+0600",
+   "status": "complete",
+   "tariff": "kids",
+   "cost": 2340.0,
+   "currency": "KZT",
+   "waiting_time": 1013,
+   "duration": 1005,
+   "performer": {
+    "name": "Aidos D.",
+    "car": {
+     "model": "Volkswagen Polo",
+     "color": "white",
+     "number": "343KXY01"
+    }
+   }
+  },
+  {
+   "id": "465101734d0e391db92727146a429bd5",
+   "created": "2025-05-01T00:29:18+0600",
+   "status": "complete",
+   "tariff": "econom",
+   "cost": 2310.0,
+   "currency": "KZT",
+   "waiting_time": 98,
+   "duration": 1077,
+   "performer": {
+    "name": "Kairat K.",
+    "car": {
+     "model": "Haval Jolion",
+     "color": "grey",
+     "number": "217AXY05"
+    }
+   }
+  },
+  {
+   "id": "2bcfd03f73e9b99b1fc489b31e87c27e",
+   "created": "2025-04-27T18:43:48+0600",
+   "status": "complete",
+   "tariff": "econom",
+   "cost": 1760.0,
+   "currency": "KZT",
+   "waiting_time": 12,
+   "duration": 1379,
+   "performer": {
+    "name": "Nurlan T.",
+    "car": {
+     "model": "Kia Carnival",
+     "color": "silver",
+     "number": "407XBY05"
+    }
+   }
+  },
+  {
+   "id": "e223e389f23ed1fc9b9f9efeb75d2f0c",
+   "created": "2025-04-26T12:36:50+0600",
+   "status": "complete",
+   "tariff": "econom",
+   "cost": 1290.0,
+   "currency": "KZT",
+   "waiting_time": 80,
+   "duration": 817
+  },
+  {
+   "id": "529b3b96cf1d46be2e0e343d1d59b308",
+   "created": "2025-04-19T08:02:32+0600",
+   "status": "complete",
+   "tariff": "econom",
+   "cost": 1320.0,
+   "currency": "KZT",
+   "waiting_time": 503,
+   "duration": 855,
+   "performer": {
+    "name": "Askar G.",
+    "car": {
+     "model": "Chery Tiggo 7 Pro",
+     "color": "white",
+     "number": "467BMB02"
+    }
+   }
+  },
+  {
+   "id": "3320e68f6de77482620f4af49b77ba46",
+   "created": "2025-04-18T09:50:13+0600",
+   "status": "complete",
+   "tariff": "minivan",
+   "cost": 3130.0,
+   "currency": "KZT",
+   "waiting_time": 297,
+   "duration": 941,
+   "performer": {
+    "name": "Aleksandr Y.",
+    "car": {
+     "model": "Chery Tiggo 7 Pro",
+     "color": "grey",
+     "number": "346HEA05"
+    }
+   }
+  },
+  {
+   "id": "f63d329547f50a35b7a745e2e327119f",
+   "created": "2025-04-18T15:18:29+0600",
+   "status": "complete",
+   "tariff": "comfortplus",
+   "cost": 2540.0,
+   "currency": "KZT",
+   "waiting_time": 168,
+   "duration": 1013,
+   "performer": {
+    "name": "Andrey N.",
+    "car": {
+     "model": "Toyota Camry",
+     "color": "blue",
+     "number": "859PXY02"
+    }
+   }
+  },
+  {
+   "id": "b10ccf77ba4d6c8e155c8139384243b4",
+   "created": "2025-04-15T08:01:34+0300",
+   "status": "complete",
+   "tariff": "econom",
+   "cost": 1980.0,
+   "currency": "KZT",
+   "waiting_time": 483,
+   "duration": 1030
+  },
+  {
+   "id": "999921ec9d2f6e76feb2d1727be19731",
+   "created": "2025-04-14T09:58:28+0600",
+   "status": "complete",
+   "tariff": "comfortplus",
+   "cost": 3580.0,
+   "currency": "KZT",
+   "waiting_time": 307,
+   "duration": 574,
+   "performer": {
+    "name": "Andrey R.",
+    "car": {
+     "model": "Chevrolet Cobalt",
+     "color": "black",
+     "number": "814HAC01"
+    }
+   }
+  },
+  {
+   "id": "a02cbed2f58f41b07c8c65ab12d5dfe5",
+   "created": "2025-04-12T13:57:11+0600",
+   "status": "cancelled",
+   "tariff": "econom",
+   "cost": 0.0,
+   "currency": "KZT",
+   "waiting_time": 437,
+   "duration": 0
+  },
+  {
+   "id": "24ce1460ef5a9491153d165346641858",
+   "created": "2025-04-08T08:57:14+0600",
+   "status": "complete",
+   "tariff": "econom",
+   "cost": 1480.0,
+   "currency": "KZT",
+   "waiting_time": 363,
+   "duration": 1057,
+   "performer": {
+    "name": "Yerzhan O.",
+    "car": {
+     "model": "Kia K5",
+     "color": "white",
+     "number": "596XHP02"
+    }
+   }
+  },
+  {
+   "id": "fbc1085b216b9833bbf282a9be09f835",
+   "created": "2025-04-08T07:27:00+0600",
+   "status": "complete",
+   "tariff": "comfort",
+   "cost": 2010.0,
+   "currency": "KZT",
+   "waiting_time": 331,
+   "duration": 1098,
+   "performer": {
+    "name": "Murat G.",
+    "car": {
+     "model": "Kia Carnival",
+     "color": "white",
+     "number": "643COX05"
+    }
+   }
+  },
+  {
+   "id": "c31db215d7d0dc99645ae8eec8c6a8b1",
+   "created": "2025-04-06T03:40:24+0600",
+   "status": "complete",
+   "tariff": "minivan",
+   "cost": 3300.0,
+   "currency": "KZT",
+   "waiting_time": 56,
+   "duration": 1044,
+   "performer": {
+    "name": "Viktor T.",
+    "car": {
+     "model": "Toyota Camry",
+     "color": "silver",
+     "number": "267PYE01"
+    }
+   }
+  },
+  {
+   "id": "64b078a7a4f9a67f9dc3bbee31523136",
+   "created": "2025-04-05T00:09:50+0600",
+   "status": "complete",
+   "tariff": "econom",
+   "cost": 1560.0,
+   "currency": "KZT",
+   "waiting_time": 767,
+   "duration": 1145
+  },
+  {
+   "id": "ac5d71336a2adcade8ca5b2ecb8e2d61",
+   "created": "2025-04-05T15:52:41+0600",
+   "status": "complete",
+   "tariff": "comfort",
+   "cost": 1790.0,
+   "currency": "KZT",
+   "waiting_time": 90,
+   "duration": 900,
+   "performer": {
+    "name": "Yerlan Z.",
+    "car": {
+     "model": "Hyundai Elantra",
+     "color": "red",
+     "number": "949TEB05"
+    }
+   }
+  },
+  {
+   "id": "ce4d89f394cbb94e80dc4cf971b0c1fa",
+   "created": "2025-03-28T19:06:05+0500",
+   "status": "complete",
+   "tariff": "comfort",
+   "cost": 2100.0,
+   "currency": "KZT",
+   "waiting_time": 185,
+   "duration": 1187,
+   "performer": {
+    "name": "Talgat V.",
+    "car": {
+     "model": "Kia Rio",
+     "color": "silver",
+     "number": "924AEA02"
+    }
+   }
+  },
+  {
+   "id": "f01a50979ed0fe5fb3bc57914882f6eb",
+   "created": "2025-03-27T08:27:23+0600",
+   "status": "complete",
+   "tariff": "econom",
+   "cost": 1600.0,
+   "currency": "KZT",
+   "waiting_time": 115,
+   "duration": 1197
+  },
+  {
+   "id": "6d0473e78adf1e46d403fd025a2a83bd",
+   "created": "2025-03-27T16:00:23+0300",
+   "status": "complete",
+   "tariff": "comfortplus",
+   "cost": 2560.0,
+   "currency": "KZT",
+   "waiting_time": 396,
+   "duration": 1032,
+   "performer": {
+    "name": "Ilya K.",
+    "car": {
+     "model": "Kia Rio",
+     "color": "white",
+     "number": "740YBE02"
+    }
+   }
+  },
+  {
+   "id": "b24a4a6d6b90a95b300a491afaa1d736",
+   "created": "2025-03-24T22:26:16+0600",
+   "status": "complete",
+   "tariff": "comfort",
+   "cost": 2300.0,
+   "currency": "KZT",
+   "waiting_time": 161,
+   "duration": 1368,
+   "performer": {
+    "name": "Andrey R.",
+    "car": {
+     "model": "Chevrolet Cobalt",
+     "color": "black",
+     "number": "814HAC01"
+    }
+   }
+  },
+  {
+   "id": "e58118d12687944303a1beac5107256e",
+   "created": "2025-03-23T00:50:57+0600",
+   "status": "complete",
+   "tariff": "comfort",
+   "cost": 2070.0,
+   "currency": "KZT",
+   "waiting_time": 1159,
+   "duration": 1165,
+   "performer": {
+    "name": "Andrey R.",
+    "car": {
+     "model": "Chevrolet Cobalt",
+     "color": "black",
+     "number": "814HAC01"
+    }
+   }
+  },
+  {
+   "id": "c8aae0c8b05731fd8916f0b779ba547e",
+   "created": "2025-03-21T14:42:57+0600",
+   "status": "complete",
+   "tariff": "econom",
+   "cost": 1960.0,
+   "currency": "KZT",
+   "waiting_time": 335,
+   "duration": 1634,
+   "performer": {
+    "name": "Dmitry N.",
+    "car": {
+     "model": "Chery Tiggo 7 Pro",
+     "color": "white",
+     "number": "348TYX02"
+    }
+   }
+  },
+  {
+   "id": "2d15420ba2bc67154087be6a4514c416",
+   "created": "2025-03-18T10:59:51+0600",
+   "status": "complete",
+   "tariff": "econom",
+   "cost": 1360.0,
+   "currency": "KZT",
+   "waiting_time": 13,
+   "duration": 920,
+   "performer": {
+    "name": "Ilya A.",
+    "car": {
+     "model": "Toyota Camry",
+     "color": "white",
+     "number": "674PTA02"
+    }
+   }
+  },
+  {
+   "id": "36a5fabaa3e538922540647b784fcb14",
+   "created": "2025-03-18T19:12:25+0300",
+   "status": "complete",
+   "tariff": "econom",
+   "cost": 1420.0,
+   "currency": "KZT",
+   "waiting_time": 155,
+   "duration": 984,
+   "performer": {
+    "name": "Talgat B.",
+    "car": {
+     "model": "Toyota Camry",
+     "color": "white",
+     "number": "204ECY05"
+    }
+   }
+  },
+  {
+   "id": "2e26651915f877681bef39f177009b2e",
+   "created": "2025-03-17T07:25:54+0600",
+   "status": "complete",
+   "tariff": "econom",
+   "cost": 1320.0,
+   "currency": "KZT",
+   "waiting_time": 23,
+   "duration": 868
+  },
+  {
+   "id": "ca6425fcbdb4f7110e9b65bba4d47431",
+   "created": "2025-03-15T16:39:20+0600",
+   "status": "complete",
+   "tariff": "econom",
+   "cost": 1720.0,
+   "currency": "KZT",
+   "waiting_time": 73,
+   "duration": 1355,
+   "performer": {
+    "name": "Kairat V.",
+    "car": {
+     "model": "Hyundai Staria",
+     "color": "grey",
+     "number": "906HMK05"
+    }
+   }
+  },
+  {
+   "id": "66a3f3db496042b0dbe7a3335d0c8205",
+   "created": "2025-03-14T07:45:49+0600",
+   "status": "complete",
+   "tariff": "comfort",
+   "cost": 2400.0,
+   "currency": "KZT",
+   "waiting_time": 696,
+   "duration": 1467,
+   "performer": {
+    "name": "Askar A.",
+    "car": {
+     "model": "Toyota Camry",
+     "color": "red",
+     "number": "524TBO05"
+    }
+   }
+  },
+  {
+   "id": "ef1e4acf2b729d66504fde7c746e49a8",
+   "created": "2025-03-13T23:38:04+0600",
+   "status": "complete",
+   "tariff": "minivan",
+   "cost": 3860.0,
+   "currency": "KZT",
+   "waiting_time": 1091,
+   "duration": 1373,
+   "performer": {
+    "name": "Ilya A.",
+    "car": {
+     "model": "Toyota Camry",
+     "color": "white",
+     "number": "674PTA02"
+    }
+   }
+  },
+  {
+   "id": "6e4f8ea3f0ad16f7db1fb4d49f9bc7bd",
+   "created": "2025-03-12T18:32:33+0600",
+   "status": "complete",
+   "tariff": "kids",
+   "cost": 2590.0,
+   "currency": "KZT",
+   "waiting_time": 614,
+   "duration": 1216,
+   "performer": {
+    "name": "Ilya D.",
+    "car": {
+     "model": "Volkswagen Polo",
+     "color": "red",
+     "number": "893HTP01"
+    }
+   }
+  },
+  {
+   "id": "17e1e8f6a03e7003e29cb897142925a0",
+   "created": "2025-03-09T22:32:06+0600",
+   "status": "complete",
+   "tariff": "comfort",
+   "cost": 3310.0,
+   "currency": "KZT",
+   "waiting_time": 548,
+   "duration": 1578
+  },
+  {
+   "id": "65ec4424f56febb1484b824bc06e1029",
+   "created": "2025-03-05T08:36:36+0600",
+   "status": "complete",
+   "tariff": "econom",
+   "cost": 3330.0,
+   "currency": "KZT",
+   "waiting_time": 11,
+   "duration": 2111,
+   "performer": {
+    "name": "Nurlan G.",
+    "car": {
+     "model": "Kia Carnival",
+     "color": "silver",
+     "number": "771YKE01"
+    }
+   }
+  },
+  {
+   "id": "e8e13f98c1ab639802cf63a898dc4031",
+   "created": "2025-03-04T08:06:06+0600",
+   "status": "complete",
+   "tariff": "econom",
+   "cost": 2020.0,
+   "currency": "KZT",
+   "waiting_time": 6,
+   "duration": 1714,
+   "performer": {
+    "name": "Ilya S.",
+    "car": {
+     "model": "Skoda Octavia",
+     "color": "blue",
+     "number": "522ECC02"
+    }
+   }
+  },
+  {
+   "id": "a7175804502d32817a37f3d677eb6d89",
+   "created": "2025-03-02T03:13:25+0300",
+   "status": "complete",
+   "tariff": "comfort",
+   "cost": 1640.0,
+   "currency": "KZT",
+   "waiting_time": 370,
+   "duration": 781,
+   "performer": {
+    "name": "Arman K.",
+    "car": {
+     "model": "Volkswagen Polo",
+     "color": "grey",
+     "number": "986TXO02"
+    }
+   }
+  },
+  {
+   "id": "45967e762824162dee7385d86c75a765",
+   "created": "2025-03-01T00:53:27+0600",
+   "status": "complete",
+   "tariff": "comfort",
+   "cost": 2930.0,
+   "currency": "KZT",
+   "waiting_time": 477,
+   "duration": 1955
+  },
+  {
+   "id": "0f5c365a27e83b871c7bf8eb4969b2a1",
+   "created": "2025-02-27T08:47:08+0600",
+   "status": "complete",
+   "tariff": "comfortplus",
+   "cost": 2880.0,
+   "currency": "KZT",
+   "waiting_time": 174,
+   "duration": 1269
+  },
+  {
+   "id": "3ebb527c1438e799242ac30f5d80a53b",
+   "created": "2025-02-24T18:44:27+0600",
+   "status": "cancelled",
+   "tariff": "econom",
+   "cost": 0.0,
+   "currency": "KZT",
+   "waiting_time": 18,
+   "duration": 0
+  },
+  {
+   "id": "2346f26dbf3b16810e4d364e397e8bfb",
+   "created": "2025-02-24T19:49:52+0600",
+   "status": "complete",
+   "tariff": "econom",
+   "cost": 1290.0,
+   "currency": "KZT",
+   "waiting_time": 192,
+   "duration": 847,
+   "performer": {
+    "name": "Andrey B.",
+    "car": {
+     "model": "Skoda Octavia",
+     "color": "white",
+     "number": "126HBT02"
+    }
+   }
+  },
+  {
+   "id": "04643f52d9c099f6fe709416340a22d7",
+   "created": "2025-02-21T08:05:37+0600",
+   "status": "complete",
+   "tariff": "comfort",
+   "cost": 2010.0,
+   "currency": "KZT",
+   "waiting_time": 450,
+   "duration": 1119,
+   "performer": {
+    "name": "Yerzhan D.",
+    "car": {
+     "model": "Hyundai Sonata",
+     "color": "white",
+     "number": "655ATY02"
+    }
+   }
+  },
+  {
+   "id": "a7698b2df1abf7a0cd591b8c23627835",
+   "created": "2025-02-17T09:08:11+0600",
+   "status": "complete",
+   "tariff": "comfortplus",
+   "cost": 2220.0,
+   "currency": "KZT",
+   "waiting_time": 216,
+   "duration": 814
+  },
+  {
+   "id": "93ed82c51cf85164113b776ed08ce31e",
+   "created": "2025-02-17T19:55:59+0600",
+   "status": "complete",
+   "tariff": "minivan",
+   "cost": 3730.0,
+   "currency": "KZT",
+   "waiting_time": 86,
+   "duration": 1311,
+   "performer": {
+    "name": "Olzhas V.",
+    "car": {
+     "model": "Hyundai Staria",
+     "color": "silver",
+     "number": "347PEB01"
+    }
+   }
+  },
+  {
+   "id": "1a9aab54e01a5b5e592fcdc649793220",
+   "created": "2025-02-14T07:09:11+0600",
+   "status": "complete",
+   "tariff": "econom",
+   "cost": 1310.0,
+   "currency": "KZT",
+   "waiting_time": 132,
+   "duration": 872,
+   "performer": {
+    "name": "Dmitry D.",
+    "car": {
+     "model": "Hyundai Accent",
+     "color": "white",
+     "number": "569KBA05"
+    }
+   }
+  },
+  {
+   "id": "ec5eac705c494d631e4c3fdf556efce4",
+   "created": "2025-02-14T18:45:52+0600",
+   "status": "complete",
+   "tariff": "business",
+   "cost": 3250.0,
+   "currency": "KZT",
+   "waiting_time": 122,
+   "duration": 514
+  },
+  {
+   "id": "82f471961a41c57f4bf70dc68b6daa25",
+   "created": "2025-02-06T19:19:21+0600",
+   "status": "complete",
+   "tariff": "comfort",
+   "cost": 1500.0,
+   "currency": "KZT",
+   "waiting_time": 84,
+   "duration": 661
+  },
+  {
+   "id": "b51bd20fda4bdf2d56a0b8b4d1792ee0",
+   "created": "2025-02-05T07:49:05+0300",
+   "status": "complete",
+   "tariff": "econom",
+   "cost": 4480.0,
+   "currency": "KZT",
+   "waiting_time": 377,
+   "duration": 2376,
+   "performer": {
+    "name": "Andrey R.",
+    "car": {
+     "model": "Chevrolet Cobalt",
+     "color": "black",
+     "number": "814HAC01"
+    }
+   }
+  },
+  {
+   "id": "60bc6cbc1987e6d09a7171aa030492b3",
+   "created": "2025-02-03T08:09:04+0600",
+   "status": "complete",
+   "tariff": "econom",
+   "cost": 1350.0,
+   "currency": "KZT",
+   "waiting_time": 123,
+   "duration": 924,
+   "performer": {
+    "name": "Ilya A.",
+    "car": {
+     "model": "Toyota Camry",
+     "color": "white",
+     "number": "674PTA02"
+    }
+   }
+  },
+  {
+   "id": "29b509424f66a91405635b3048340d51",
+   "created": "2025-02-02T05:30:05+0600",
+   "status": "complete",
+   "tariff": "comfort",
+   "cost": 1720.0,
+   "currency": "KZT",
+   "waiting_time": 52,
+   "duration": 860
+  },
+  {
+   "id": "27d81ea0653d171fc0bde748dbb464a3",
+   "created": "2025-02-02T23:16:55+0600",
+   "status": "complete",
+   "tariff": "comfort",
+   "cost": 2010.0,
+   "currency": "KZT",
+   "waiting_time": 157,
+   "duration": 1128,
+   "performer": {
+    "name": "Zhanibek G.",
+    "car": {
+     "model": "Volkswagen Polo",
+     "color": "silver",
+     "number": "195OOA02"
+    }
+   }
+  },
+  {
+   "id": "c7cfb659f0636972c737327ade34106a",
+   "created": "2025-02-02T23:56:35+0600",
+   "status": "complete",
+   "tariff": "econom",
+   "cost": 1140.0,
+   "currency": "KZT",
+   "waiting_time": 78,
+   "duration": 674,
+   "performer": {
+    "name": "Sergey A.",
+    "car": {
+     "model": "Chevrolet Cobalt",
+     "color": "white",
+     "number": "916OEK02"
+    }
+   }
+  },
+  {
+   "id": "005bbf731dbe4a3c88db369235c0c003",
+   "created": "2025-02-01T13:40:09+0600",
+   "status": "complete",
+   "tariff": "minivan",
+   "cost": 5450.0,
+   "currency": "KZT",
+   "waiting_time": 1115,
+   "duration": 836,
+   "performer": {
+    "name": "Zhanibek O.",
+    "car": {
+     "model": "Hyundai Accent",
+     "color": "silver",
+     "number": "556PMP02"
+    }
+   }
+  },
+  {
+   "id": "8d59c34d44bd604fb5502e2b4bde7d88",
+   "created": "2025-02-01T17:37:44+0600",
+   "status": "complete",
+   "tariff": "econom",
+   "cost": 2250.0,
+   "currency": "KZT",
+   "waiting_time": 168,
+   "duration": 2011,
+   "performer": {
+    "name": "Aleksandr S.",
+    "car": {
+     "model": "Hyundai Sonata",
+     "color": "white",
+     "number": "181XEH02"
+    }
+   }
+  },
+  {
+   "id": "669e098d63e73896c784ef4b8fffe845",
+   "created": "2025-02-01T23:03:50+0600",
+   "status": "complete",
+   "tariff": "minivan",
+   "cost": 4810.0,
+   "currency": "KZT",
+   "waiting_time": 389,
+   "duration": 1011,
+   "performer": {
+    "name": "Aidos A.",
+    "car": {
+     "model": "Volkswagen Polo",
+     "color": "black",
+     "number": "400MBP05"
+    }
+   }
+  },
+  {
+   "id": "80fd963df3d36295ee6bcb89861550f6",
+   "created": "2025-01-29T18:54:58+0600",
+   "status": "complete",
+   "tariff": "comfort",
+   "cost": 2560.0,
+   "currency": "KZT",
+   "waiting_time": 268,
+   "duration": 846
+  },
+  {
+   "id": "33b636dcc2d01c42fd595978796512e3",
+   "created": "2025-01-26T23:56:41+0600",
+   "status": "complete",
+   "tariff": "comfortplus",
+   "cost": 2000.0,
+   "currency": "KZT",
+   "waiting_time": 34,
+   "duration": 665,
+   "performer": {
+    "name": "Andrey R.",
+    "car": {
+     "model": "Chevrolet Cobalt",
+     "color": "black",
+     "number": "814HAC01"
+    }
+   }
+  },
+  {
+   "id": "e31f22121654c83f62510f01959677e9",
+   "created": "2025-01-25T20:08:21+0600",
+   "status": "complete",
+   "tariff": "econom",
+   "cost": 2720.0,
+   "currency": "KZT",
+   "waiting_time": 213,
+   "duration": 2587,
+   "performer": {
+    "name": "Murat G.",
+    "car": {
+     "model": "Kia Carnival",
+     "color": "white",
+     "number": "643COX05"
+    }
+   }
+  },
+  {
+   "id": "78d8cdd6490a886c364429395256f928",
+   "created": "2025-01-19T15:03:32+0600",
+   "status": "complete",
+   "tariff": "econom",
+   "cost": 1630.0,
+   "currency": "KZT",
+   "waiting_time": 541,
+   "duration": 1267,
+   "performer": {
+    "name": "Olzhas T.",
+    "car": {
+     "model": "Hyundai Elantra",
+     "color": "black",
+     "number": "584XEP02"
+    }
+   }
+  },
+  {
+   "id": "4e733dcc866482ee6844a0e3615eca80",
+   "created": "2025-01-19T06:07:08+0600",
+   "status": "complete",
+   "tariff": "econom",
+   "cost": 1690.0,
+   "currency": "KZT",
+   "waiting_time": 37,
+   "duration": 821,
+   "performer": {
+    "name": "Yerlan R.",
+    "car": {
+     "model": "Volkswagen Polo",
+     "color": "white",
+     "number": "994YXT02"
+    }
+   }
+  },
+  {
+   "id": "8098f50dbaff361ab37e3c411a6275f5",
+   "created": "2025-01-18T11:17:49+0600",
+   "status": "complete",
+   "tariff": "econom",
+   "cost": 1040.0,
+   "currency": "KZT",
+   "waiting_time": 263,
+   "duration": 553,
+   "performer": {
+    "name": "Askar G.",
+    "car": {
+     "model": "Chery Tiggo 7 Pro",
+     "color": "white",
+     "number": "467BMB02"
+    }
+   }
+  },
+  {
+   "id": "7c65dbfb483fca724a1a7c2e7aededf4",
+   "created": "2025-01-15T22:50:01+0600",
+   "status": "cancelled",
+   "tariff": "econom",
+   "cost": 0.0,
+   "currency": "KZT",
+   "waiting_time": 425,
+   "duration": 0
+  },
+  {
+   "id": "ec6e8294b9dac7798079cdc9665e467f",
+   "created": "2025-01-14T07:12:30+0600",
+   "status": "complete",
+   "tariff": "minivan",
+   "cost": 5470.0,
+   "currency": "KZT",
+   "waiting_time": 618,
+   "duration": 1003
+  },
+  {
+   "id": "2238dfc60a4e3ccf48ef30ff308777b4",
+   "created": "2025-01-14T08:28:42+0600",
+   "status": "complete",
+   "tariff": "comfortplus",
+   "cost": 2010.0,
+   "currency": "KZT",
+   "waiting_time": 187,
+   "duration": 681,
+   "performer": {
+    "name": "Zhanibek R.",
+    "car": {
+     "model": "Hyundai Accent",
+     "color": "red",
+     "number": "469EHE02"
+    }
+   }
+  },
+  {
+   "id": "a819213dc4fa84a427d764ce01c4e229",
+   "created": "2025-01-11T19:25:22+0600",
+   "status": "complete",
+   "tariff": "econom",
+   "cost": 1370.0,
+   "currency": "KZT",
+   "waiting_time": 180,
+   "duration": 954,
+   "performer": {
+    "name": "Yerzhan D.",
+    "car": {
+     "model": "Hyundai Sonata",
+     "color": "white",
+     "number": "655ATY02"
+    }
+   }
+  },
+  {
+   "id": "541bf89c75d9c07c9d9363ea0182144d",
+   "created": "2025-01-11T22:59:59+0600",
+   "status": "complete",
+   "tariff": "minivan",
+   "cost": 3400.0,
+   "currency": "KZT",
+   "waiting_time": 1479,
+   "duration": 1141,
+   "performer": {
+    "name": "Ilya A.",
+    "car": {
+     "model": "Toyota Camry",
+     "color": "white",
+     "number": "674PTA02"
+    }
+   }
+  },
+  {
+   "id": "368b7d6843c6b5324b25c4837bae0f3b",
+   "created": "2025-01-11T16:10:23+0600",
+   "status": "complete",
+   "tariff": "minivan",
+   "cost": 2620.0,
+   "currency": "KZT",
+   "waiting_time": 962,
+   "duration": 690,
+   "performer": {
+    "name": "Murat G.",
+    "car": {
+     "model": "Kia Carnival",
+     "color": "white",
+     "number": "643COX05"
+    }
+   }
+  },
+  {
+   "id": "d6e381035df70cc1133b385e2cc09f87",
+   "created": "2025-01-11T22:56:33+0600",
+   "status": "complete",
+   "tariff": "comfort",
+   "cost": 1360.0,
+   "currency": "KZT",
+   "waiting_time": 49,
+   "duration": 537,
+   "performer": {
+    "name": "Zhanibek T.",
+    "car": {
+     "model": "Hyundai Elantra",
+     "color": "white",
+     "number": "839COA02"
+    }
+   }
+  },
+  {
+   "id": "e92fd9fd30afe6139dc4f583038ef7af",
+   "created": "2025-01-06T21:43:32+0600",
+   "status": "complete",
+   "tariff": "business",
+   "cost": 3400.0,
+   "currency": "KZT",
+   "waiting_time": 554,
+   "duration": 583
+  },
+  {
+   "id": "8ddd6a3e492d85a7be50150015a75ed9",
+   "created": "2025-01-05T21:19:26+0600",
+   "status": "complete",
+   "tariff": "comfortplus",
+   "cost": 4050.0,
+   "currency": "KZT",
+   "waiting_time": 26,
+   "duration": 2115
+  },
+  {
+   "id": "b7ed70cff111be9e8545b11f6d820335",
+   "created": "2025-01-04T19:15:43+0300",
+   "status": "complete",
+   "tariff": "comfort",
+   "cost": 2120.0,
+   "currency": "KZT",
+   "waiting_time": 1157,
+   "duration": 1240
+  },
+  {
+   "id": "248607c22059ad46a8560b7427ce46ce",
+   "created": "2025-01-02T19:43:50+0600",
+   "status": "complete",
+   "tariff": "comfort",
+   "cost": 3100.0,
+   "currency": "KZT",
+   "waiting_time": 174,
+   "duration": 1657,
+   "performer": {
+    "name": "Andrey G.",
+    "car": {
+     "model": "Kia K5",
+     "color": "silver",
+     "number": "452OPP01"
+    }
+   }
+  },
+  {
+   "id": "b3510ddc595186208769ee241875589a",
+   "created": "2024-12-28T02:14:24+0600",
+   "status": "complete",
+   "tariff": "minivan",
+   "cost": 3680.0,
+   "currency": "KZT",
+   "waiting_time": 403,
+   "duration": 1308,
+   "performer": {
+    "name": "Talgat V.",
+    "car": {
+     "model": "Kia Rio",
+     "color": "silver",
+     "number": "924AEA02"
+    }
+   }
+  },
+  {
+   "id": "55616496e8c44e4c5ce1bcc216c702a1",
+   "created": "2024-12-26T19:24:01+0600",
+   "status": "complete",
+   "tariff": "minivan",
+   "cost": 2770.0,
+   "currency": "KZT",
+   "waiting_time": 409,
+   "duration": 780
+  },
+  {
+   "id": "9adda7c882ece8aad20cd375a5d453c4",
+   "created": "2024-12-26T21:09:34+0600",
+   "status": "complete",
+   "tariff": "econom",
+   "cost": 1540.0,
+   "currency": "KZT",
+   "waiting_time": 240,
+   "duration": 1169,
+   "performer": {
+    "name": "Kairat V.",
+    "car": {
+     "model": "Hyundai Staria",
+     "color": "grey",
+     "number": "906HMK05"
+    }
+   }
+  },
+  {
+   "id": "41458abc8cc2e0f013093c176c092d0a",
+   "created": "2024-12-23T18:02:15+0600",
+   "status": "complete",
+   "tariff": "econom",
+   "cost": 1230.0,
+   "currency": "KZT",
+   "waiting_time": 192,
+   "duration": 791,
+   "performer": {
+    "name": "Nurlan N.",
+    "car": {
+     "model": "Chevrolet Cobalt",
+     "color": "silver",
+     "number": "952MAE01"
+    }
+   }
+  },
+  {
+   "id": "5a24591dff2e1955fc6bc66be92915a3",
+   "created": "2024-12-23T22:42:00+0600",
+   "status": "complete",
+   "tariff": "econom",
+   "cost": 2900.0,
+   "currency": "KZT",
+   "waiting_time": 183,
+   "duration": 1587,
+   "performer": {
+    "name": "Oleg Z.",
+    "car": {
+     "model": "Kia Rio",
+     "color": "white",
+     "number": "783XPA05"
+    }
+   }
+  },
+  {
+   "id": "08f61b3fc0c91cd8d9f8a24e41bb0e0d",
+   "created": "2024-12-21T21:44:11+0600",
+   "status": "complete",
+   "tariff": "econom",
+   "cost": 1370.0,
+   "currency": "KZT",
+   "waiting_time": 9,
+   "duration": 961,
+   "performer": {
+    "name": "Andrey R.",
+    "car": {
+     "model": "Chevrolet Cobalt",
+     "color": "black",
+     "number": "814HAC01"
+    }
+   }
+  },
+  {
+   "id": "ca41e052d19eaf98b6b8432989fab5cc",
+   "created": "2024-12-19T15:25:52+0600",
+   "status": "complete",
+   "tariff": "comfort",
+   "cost": 1480.0,
+   "currency": "KZT",
+   "waiting_time": 413,
+   "duration": 650,
+   "performer": {
+    "name": "Daulet K.",
+    "car": {
+     "model": "Chery Tiggo 7 Pro",
+     "color": "black",
+     "number": "175BMO05"
+    }
+   }
+  },
+  {
+   "id": "9248c8c84c618a436f041c76b3e6922d",
+   "created": "2024-12-18T08:37:36+0600",
+   "status": "complete",
+   "tariff": "kids",
+   "cost": 2220.0,
+   "currency": "KZT",
+   "waiting_time": 41,
+   "duration": 968,
+   "performer": {
+    "name": "Samat N.",
+    "car": {
+     "model": "Hyundai Elantra",
+     "color": "red",
+     "number": "193CPO02"
+    }
+   }
+  },
+  {
+   "id": "7d3d6b721f3ec5721527b2ac1ddb4f15",
+   "created": "2024-12-17T22:42:42+0600",
+   "status": "cancelled",
+   "tariff": "econom",
+   "cost": 0.0,
+   "currency": "KZT",
+   "waiting_time": 115,
+   "duration": 0
+  },
+  {
+   "id": "f45dbd91989da530b01fb9f34d7d10f3",
+   "created": "2024-12-17T07:32:41+0600",
+   "status": "complete",
+   "tariff": "econom",
+   "cost": 1370.0,
+   "currency": "KZT",
+   "waiting_time": 307,
+   "duration": 960,
+   "performer": {
+    "name": "Zhanibek R.",
+    "car": {
+     "model": "Hyundai Accent",
+     "color": "red",
+     "number": "469EHE02"
+    }
+   }
+  },
+  {
+   "id": "2b10a823d7770933adf01fe06d572692",
+   "created": "2024-12-15T05:13:51+0600",
+   "status": "complete",
+   "tariff": "comfortplus",
+   "cost": 3220.0,
+   "currency": "KZT",
+   "waiting_time": 374,
+   "duration": 1538
+  },
+  {
+   "id": "a79617c47520d99e4dd7cb5cb5a78756",
+   "created": "2024-12-14T19:12:44+0600",
+   "status": "complete",
+   "tariff": "comfortplus",
+   "cost": 2350.0,
+   "currency": "KZT",
+   "waiting_time": 460,
+   "duration": 928,
+   "performer": {
+    "name": "Andrey R.",
+    "car": {
+     "model": "Chevrolet Cobalt",
+     "color": "black",
+     "number": "814HAC01"
+    }
+   }
+  },
+  {
+   "id": "643058d9c1f98e90592aa87bfd853cf8",
+   "created": "2024-12-14T16:25:19+0600",
+   "status": "complete",
+   "tariff": "kids",
+   "cost": 3930.0,
+   "currency": "KZT",
+   "waiting_time": 1500,
+   "duration": 2296,
+   "performer": {
+    "name": "Olzhas G.",
+    "car": {
+     "model": "Volkswagen Polo",
+     "color": "white",
+     "number": "600XHP02"
+    }
+   }
+  },
+  {
+   "id": "399e4d08cf7798ccef36feb1bb8f7b2b",
+   "created": "2024-12-12T13:53:13+0600",
+   "status": "complete",
+   "tariff": "comfort",
+   "cost": 2180.0,
+   "currency": "KZT",
+   "waiting_time": 1072,
+   "duration": 1313
+  },
+  {
+   "id": "4600fc5f1f9b5662b04816fdfd869a13",
+   "created": "2024-12-12T14:29:09+0600",
+   "status": "complete",
+   "tariff": "comfort",
+   "cost": 1260.0,
+   "currency": "KZT",
+   "waiting_time": 436,
+   "duration": 450
+  },
+  {
+   "id": "2055adeccbebb43fef15b821ade6bf3c",
+   "created": "2024-12-06T18:07:36+0300",
+   "status": "complete",
+   "tariff": "econom",
+   "cost": 980.0,
+   "currency": "KZT",
+   "waiting_time": 450,
+   "duration": 492,
+   "performer": {
+    "name": "Marat S.",
+    "car": {
+     "model": "Kia Rio",
+     "color": "black",
+     "number": "315AHH01"
+    }
+   }
+  },
+  {
+   "id": "6fdcc21bdb2c0eb7f75c07518fd8acb4",
+   "created": "2024-12-01T22:49:59+0600",
+   "status": "complete",
+   "tariff": "comfort",
+   "cost": 2080.0,
+   "currency": "KZT",
+   "waiting_time": 341,
+   "duration": 1219
+  },
+  {
+   "id": "a23036d288d7d47cec38704b22c0eee9",
+   "created": "2024-11-29T12:45:01+0600",
+   "status": "complete",
+   "tariff": "econom",
+   "cost": 1660.0,
+   "currency": "KZT",
+   "waiting_time": 71,
+   "duration": 1327
+  },
+  {
+   "id": "3e4c943a3dabba618a693650a9a2e9cd",
+   "created": "2024-11-28T07:50:05+0600",
+   "status": "complete",
+   "tariff": "econom",
+   "cost": 1690.0,
+   "currency": "KZT",
+   "waiting_time": 498,
+   "duration": 1371,
+   "performer": {
+    "name": "Daulet K.",
+    "car": {
+     "model": "Chery Tiggo 7 Pro",
+     "color": "black",
+     "number": "175BMO05"
+    }
+   }
+  },
+  {
+   "id": "19b7775fe7bb5e42b3126a11db6ae7db",
+   "created": "2024-11-22T12:38:31+0600",
+   "status": "complete",
+   "tariff": "econom",
+   "cost": 1490.0,
+   "currency": "KZT",
+   "waiting_time": 134,
+   "duration": 1121
+  },
+  {
+   "id": "527a9f7bd007cd41f122d458f521cf35",
+   "created": "2024-11-20T18:52:15+0600",
+   "status": "complete",
+   "tariff": "econom",
+   "cost": 1660.0,
+   "currency": "KZT",
+   "waiting_time": 154,
+   "duration": 1333,
+   "performer": {
+    "name": "Zhanibek T.",
+    "car": {
+     "model": "Hyundai Elantra",
+     "color": "white",
+     "number": "839COA02"
+    }
+   }
+  },
+  {
+   "id": "d5de293bb9a807ba66dce997b2c454a4",
+   "created": "2024-11-17T13:15:23+0600",
+   "status": "complete",
+   "tariff": "comfort",
+   "cost": 1760.0,
+   "currency": "KZT",
+   "waiting_time": 118,
+   "duration": 923
+  },
+  {
+   "id": "56479889c1c4f6187925b7d57c65a804",
+   "created": "2024-11-16T01:48:00+0600",
+   "status": "complete",
+   "tariff": "comfort",
+   "cost": 1140.0,
+   "currency": "KZT",
+   "waiting_time": 127,
+   "duration": 349,
+   "performer": {
+    "name": "Askar T.",
+    "car": {
+     "model": "Hyundai Sonata",
+     "color": "silver",
+     "number": "490TBM05"
+    }
+   }
+  },
+  {
+   "id": "07983bc0579744ba107380cb46d9e34d",
+   "created": "2024-11-15T08:57:55+0600",
+   "status": "complete",
+   "tariff": "econom",
+   "cost": 1650.0,
+   "currency": "KZT",
+   "waiting_time": 486,
+   "duration": 1323,
+   "performer": {
+    "name": "Daulet A.",
+    "car": {
+     "model": "Kia Rio",
+     "color": "black",
+     "number": "620PCA02"
+    }
+   }
+  },
+  {
+   "id": "735e81531c3892e8f2cfcd6380ab4b7f",
+   "created": "2024-11-13T19:26:33+0600",
+   "status": "complete",
+   "tariff": "econom",
+   "cost": 1200.0,
+   "currency": "KZT",
+   "waiting_time": 46,
+   "duration": 765,
+   "performer": {
+    "name": "Aidos A.",
+    "car": {
+     "model": "Volkswagen Polo",
+     "color": "black",
+     "number": "400MBP05"
+    }
+   }
+  },
+  {
+   "id": "0067743e7de1936bd0fee4f12b1c2d3d",
+   "created": "2024-11-13T07:36:49+0600",
+   "status": "cancelled",
+   "tariff": "comfortplus",
+   "cost": 0.0,
+   "currency": "KZT",
+   "waiting_time": 77,
+   "duration": 0
+  },
+  {
+   "id": "695f34ffbbe30fd24ed7b3f3960952eb",
+   "created": "2024-11-12T18:24:25+0600",
+   "status": "complete",
+   "tariff": "comfort",
+   "cost": 1460.0,
+   "currency": "KZT",
+   "waiting_time": 317,
+   "duration": 650
+  },
+  {
+   "id": "d76d9612a9a0758ef3a7bd25940e3521",
+   "created": "2024-11-12T10:45:43+0300",
+   "status": "complete",
+   "tariff": "econom",
+   "cost": 1540.0,
+   "currency": "KZT",
+   "waiting_time": 223,
+   "duration": 1185,
+   "performer": {
+    "name": "Ilya A.",
+    "car": {
+     "model": "Toyota Camry",
+     "color": "white",
+     "number": "674PTA02"
+    }
+   }
+  },
+  {
+   "id": "bc547d546c8de840ed30555662a53193",
+   "created": "2024-11-12T21:10:12+0600",
+   "status": "complete",
+   "tariff": "comfortplus",
+   "cost": 2960.0,
+   "currency": "KZT",
+   "waiting_time": 407,
+   "duration": 1374,
+   "performer": {
+    "name": "Daulet A.",
+    "car": {
+     "model": "Kia Rio",
+     "color": "black",
+     "number": "620PCA02"
+    }
+   }
+  },
+  {
+   "id": "68a64d97123c6a29969b6b4bfcce3ef8",
+   "created": "2024-11-11T19:46:46+0600",
+   "status": "complete",
+   "tariff": "econom",
+   "cost": 1300.0,
+   "currency": "KZT",
+   "waiting_time": 120,
+   "duration": 899
+  },
+  {
+   "id": "126aa3157b189d5d9b247a558fe88b77",
+   "created": "2024-11-09T02:58:58+0600",
+   "status": "complete",
+   "tariff": "econom",
+   "cost": 1460.0,
+   "currency": "KZT",
+   "waiting_time": 46,
+   "duration": 1087,
+   "performer": {
+    "name": "Bekzat V.",
+    "car": {
+     "model": "Hyundai Accent",
+     "color": "white",
+     "number": "561EBH02"
+    }
+   }
+  },
+  {
+   "id": "d1d18e0b27e7a6bdc2a49fd86ef54cee",
+   "created": "2024-11-07T08:55:50+0300",
+   "status": "complete",
+   "tariff": "comfort",
+   "cost": 2640.0,
+   "currency": "KZT",
+   "waiting_time": 128,
+   "duration": 1756
+  },
+  {
+   "id": "3fbc75e09b1911122d2ae08e6c8c5d0e",
+   "created": "2024-11-07T08:35:53+0600",
+   "status": "complete",
+   "tariff": "comfortplus",
+   "cost": 1930.0,
+   "currency": "KZT",
+   "waiting_time": 183,
+   "duration": 641,
+   "performer": {
+    "name": "Arman B.",
+    "car": {
+     "model": "Lexus ES",
+     "color": "white",
+     "number": "211THA05"
+    }
+   }
+  },
+  {
+   "id": "a265df650d56e00031456a6cf42323d9",
+   "created": "2024-11-06T19:44:46+0500",
+   "status": "complete",
+   "tariff": "econom",
+   "cost": 2080.0,
+   "currency": "KZT",
+   "waiting_time": 48,
+   "duration": 1860
+  },
+  {
+   "id": "0610c42dc0241ac149d83188d00dcc4f",
+   "created": "2024-11-02T19:28:47+0600",
+   "status": "complete",
+   "tariff": "comfortplus",
+   "cost": 3450.0,
+   "currency": "KZT",
+   "waiting_time": 510,
+   "duration": 674,
+   "performer": {
+    "name": "Andrey G.",
+    "car": {
+     "model": "Kia K5",
+     "color": "silver",
+     "number": "452OPP01"
+    }
+   }
+  },
+  {
+   "id": "4beef1607fac89fe5fe0c7c32336d60b",
+   "created": "2024-11-01T16:00:14+0600",
+   "status": "complete",
+   "tariff": "econom",
+   "cost": 1610.0,
+   "currency": "KZT",
+   "waiting_time": 64,
+   "duration": 1281,
+   "performer": {
+    "name": "Aleksandr Y.",
+    "car": {
+     "model": "Chery Tiggo 7 Pro",
+     "color": "grey",
+     "number": "346HEA05"
+    }
+   }
+  },
+  {
+   "id": "fa5f9e725166488bb00832dae24ba9d4",
+   "created": "2024-10-26T18:06:45+0600",
+   "status": "complete",
+   "tariff": "comfort",
+   "cost": 2500.0,
+   "currency": "KZT",
+   "waiting_time": 968,
+   "duration": 1632
+  },
+  {
+   "id": "0b3f953a5e75788f9fb886b2a662cb92",
+   "created": "2024-10-26T12:22:20+0600",
+   "status": "complete",
+   "tariff": "econom",
+   "cost": 1310.0,
+   "currency": "KZT",
+   "waiting_time": 118,
+   "duration": 913,
+   "performer": {
+    "name": "Aleksandr S.",
+    "car": {
+     "model": "Hyundai Sonata",
+     "color": "white",
+     "number": "181XEH02"
+    }
+   }
+  },
+  {
+   "id": "b958d1532afa5f6aaa03081bd4986a31",
+   "created": "2024-10-19T14:15:12+0300",
+   "status": "complete",
+   "tariff": "econom",
+   "cost": 1280.0,
+   "currency": "KZT",
+   "waiting_time": 265,
+   "duration": 872,
+   "performer": {
+    "name": "Daulet Z.",
+    "car": {
+     "model": "Hyundai Elantra",
+     "color": "black",
+     "number": "319HXO05"
+    }
+   }
+  },
+  {
+   "id": "0c754a170131c6019923fc7a0d6b160f",
+   "created": "2024-10-18T08:44:03+0600",
+   "status": "complete",
+   "tariff": "comfortplus",
+   "cost": 3810.0,
+   "currency": "KZT",
+   "waiting_time": 415,
+   "duration": 1993
+  },
+  {
+   "id": "2d8d7db85bab96cc70cef646274b8b98",
+   "created": "2024-10-18T19:53:10+0600",
+   "status": "complete",
+   "tariff": "econom",
+   "cost": 2010.0,
+   "currency": "KZT",
+   "waiting_time": 118,
+   "duration": 724,
+   "performer": {
+    "name": "Talgat B.",
+    "car": {
+     "model": "Toyota Camry",
+     "color": "white",
+     "number": "204ECY05"
+    }
+   }
+  },
+  {
+   "id": "1521e8251177fdd5761b7e117c192e61",
+   "created": "2024-10-17T10:47:25+0600",
+   "status": "complete",
+   "tariff": "comfortplus",
+   "cost": 2330.0,
+   "currency": "KZT",
+   "waiting_time": 40,
+   "duration": 940,
+   "performer": {
+    "name": "Dmitry K.",
+    "car": {
+     "model": "Chevrolet Cobalt",
+     "color": "grey",
+     "number": "314CKK02"
+    }
+   }
+  },
+  {
+   "id": "c161b06c1397b5425e653990fecd0ded",
+   "created": "2024-10-10T17:18:42+0600",
+   "status": "complete",
+   "tariff": "business",
+   "cost": 6210.0,
+   "currency": "KZT",
+   "waiting_time": 117,
+   "duration": 1769,
+   "performer": {
+    "name": "Ilya K.",
+    "car": {
+     "model": "Kia Rio",
+     "color": "white",
+     "number": "740YBE02"
+    }
+   }
+  },
+  {
+   "id": "1874ed7d9190c53fb2d2570a2ef634f2",
+   "created": "2024-10-08T08:39:52+0600",
+   "status": "complete",
+   "tariff": "comfortplus",
+   "cost": 2040.0,
+   "currency": "KZT",
+   "waiting_time": 759,
+   "duration": 730,
+   "performer": {
+    "name": "Ilya B.",
+    "car": {
+     "model": "Kia K5",
+     "color": "silver",
+     "number": "415OPX02"
+    }
+   }
+  },
+  {
+   "id": "1752815cbcbf15830a0175e5937d6fb1",
+   "created": "2024-10-06T12:09:28+0600",
+   "status": "complete",
+   "tariff": "econom",
+   "cost": 1120.0,
+   "currency": "KZT",
+   "waiting_time": 179,
+   "duration": 680,
+   "performer": {
+    "name": "Bekzat T.",
+    "car": {
+     "model": "Chery Tiggo 7 Pro",
+     "color": "white",
+     "number": "734EOA05"
+    }
+   }
+  },
+  {
+   "id": "798b2f02aa2fd9d1b5ad09f5d161a381",
+   "created": "2024-10-03T22:08:34+0600",
+   "status": "complete",
+   "tariff": "econom",
+   "cost": 1680.0,
+   "currency": "KZT",
+   "waiting_time": 561,
+   "duration": 1386,
+   "performer": {
+    "name": "Arman B.",
+    "car": {
+     "model": "Lexus ES",
+     "color": "white",
+     "number": "211THA05"
+    }
+   }
+  },
+  {
+   "id": "11ea2c00863ecbe2a8d992924a85e443",
+   "created": "2024-09-30T08:10:06+0600",
+   "status": "complete",
+   "tariff": "comfort",
+   "cost": 1930.0,
+   "currency": "KZT",
+   "waiting_time": 59,
+   "duration": 1107,
+   "performer": {
+    "name": "Zhanibek D.",
+    "car": {
+     "model": "Kia Rio",
+     "color": "white",
+     "number": "619XHX05"
+    }
+   }
+  },
+  {
+   "id": "91cbbc49542ef29e1bcfb92f798b0757",
+   "created": "2024-09-30T15:51:38+0500",
+   "status": "complete",
+   "tariff": "business",
+   "cost": 4620.0,
+   "currency": "KZT",
+   "waiting_time": 230,
+   "duration": 1120
+  },
+  {
+   "id": "67432c04c0ac1c00af8e26b26cfbf173",
+   "created": "2024-09-23T21:26:13+0600",
+   "status": "complete",
+   "tariff": "econom",
+   "cost": 1030.0,
+   "currency": "KZT",
+   "waiting_time": 166,
+   "duration": 575
+  },
+  {
+   "id": "761e6287d07c5e53b8f6703b77ff3c31",
+   "created": "2024-09-22T16:48:09+0600",
+   "status": "complete",
+   "tariff": "comfortplus",
+   "cost": 1680.0,
+   "currency": "KZT",
+   "waiting_time": 77,
+   "duration": 476,
+   "performer": {
+    "name": "Ilya A.",
+    "car": {
+     "model": "Toyota Camry",
+     "color": "white",
+     "number": "674PTA02"
+    }
+   }
+  },
+  {
+   "id": "f220eeb567602abdff310f21c87b17d9",
+   "created": "2024-09-21T12:38:08+0600",
+   "status": "complete",
+   "tariff": "kids",
+   "cost": 5180.0,
+   "currency": "KZT",
+   "waiting_time": 1022,
+   "duration": 2156,
+   "performer": {
+    "name": "Rustam Y.",
+    "car": {
+     "model": "Kia K5",
+     "color": "silver",
+     "number": "690PBM02"
+    }
+   }
+  },
+  {
+   "id": "4d7ec4b140018cbe54492845acd3d56f",
+   "created": "2024-09-20T14:34:41+0600",
+   "status": "complete",
+   "tariff": "econom",
+   "cost": 1220.0,
+   "currency": "KZT",
+   "waiting_time": 30,
+   "duration": 815
+  },
+  {
+   "id": "226378ab15b2c2b48cf0f97b4128d40b",
+   "created": "2024-09-04T08:57:12+0600",
+   "status": "complete",
+   "tariff": "comfort",
+   "cost": 1580.0,
+   "currency": "KZT",
+   "waiting_time": 149,
+   "duration": 784
+  },
+  {
+   "id": "44b1a1ee794836f27eaab0a1f4ac27ef",
+   "created": "2024-09-03T17:10:32+0600",
+   "status": "complete",
+   "tariff": "econom",
+   "cost": 1230.0,
+   "currency": "KZT",
+   "waiting_time": 47,
+   "duration": 833,
+   "performer": {
+    "name": "Yerzhan O.",
+    "car": {
+     "model": "Kia K5",
+     "color": "white",
+     "number": "596XHP02"
+    }
+   }
+  }
+ ]
+}

@@ -1,0 +1,23 @@
+#!/bin/sh
+# Refuse to commit ride data outside the synthetic sample folder.
+# Enable once per clone:  git config core.hooksPath .githooks
+# (.gitignore stops accidental `git add`; this also catches `git add -f`.)
+
+bad=$(git diff --cached --name-only --diff-filter=ACMR |
+      grep -Ei '\.(json|jsonl|csv|zip|7z|rar|tar|gz)$|dashboard\.html$' |
+      grep -Ev '^(data/sample/|tests/)')
+
+if [ -n "$bad" ]; then
+  echo "pre-commit: refusing to commit possible private ride data:" >&2
+  echo "$bad" | sed 's/^/  /' >&2
+  echo "Only synthetic files under data/sample/ may be committed." >&2
+  exit 1
+fi
+
+# Belt and braces: anything in data/sample must be generator output.
+for f in $(git diff --cached --name-only --diff-filter=ACMR -- data/sample/); do
+  case "$f" in
+    data/sample/rides_export_*.json) ;;
+    *) echo "pre-commit: unexpected file in data/sample/: $f" >&2; exit 1 ;;
+  esac
+done

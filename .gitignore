@@ -1,0 +1,59 @@
+# ──────────────────────────────────────────────────────────────────────────
+# PRIVACY: real ride-history exports must never be committed.
+#
+# Policy: everything under data/ is ignored EXCEPT data/sample/, which holds
+# the synthetic dataset produced by `taxistats generate-sample`.
+# Put real exports in data/raw/ (or anywhere matched below).
+# ──────────────────────────────────────────────────────────────────────────
+/data/*
+!/data/sample/
+!/data/README.md
+
+# Common names for a downloaded export folder, wherever it lands.
+**/raw/
+**/private/
+**/exports/
+**/export/
+**/*[Yy]andex*/
+**/*YANDEX*/
+**/*[Tt]axi*[Ee]xport*/
+**/*[Rr]ide*[Hh]istory*/
+**/*[Oo]rder*[Hh]istory*/
+*.private.json
+*.real.json
+
+# Archives the export is usually delivered in.
+*.zip
+*.7z
+*.tar
+*.tar.gz
+*.rar
+
+# Pipeline outputs — derived from whatever data was analysed, so treat as
+# private by default. Regenerate locally.
+/output/
+/reports/
+*.dashboard.html
+
+# ── Python ───────────────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+build/
+dist/
+.venv/
+venv/
+.env
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+.ipynb_checkpoints/
+
+# ── Editors / OS ─────────────────────────────────────────────────────────
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
